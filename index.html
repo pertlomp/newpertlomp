@@ -6,7 +6,7 @@
 
 <!-- ========== PRIMARY SEO ========== -->
 <title>Pert Lomp — Strategic Advisor, Executive Mentor & AI-Era Thinking Partner | Founder of Evoluna</title>
-<meta name="description" content="Strategic clarity for founders, CTOs, executives and organisations navigating complexity in the age of AI. 25+ years across technology, media and strategy. Founder of Evoluna. Member of Estonian Mentors' Chamber. Confidential 1:1 work in Tallinn or online.">
+<meta name="description" content="Pert Lomp is a strategic advisor, executive mentor and systems thinker helping founders, CTOs, executives and organisations turn complexity into clarity, structure and better decisions in the age of AI. Founder of Evoluna. EMCC EIA Practitioner.">
 <meta name="keywords" content="strategic advisor, executive mentor, AI-era leadership, systems thinker, CTO advisor, founder mentor, technology leadership, board advisor Estonia, kovisioon, GROW model, Evoluna founder, Pert Lomp, strateegiline nõustaja, juhtimismentor, AI ajastu mentor, süsteemne mõtlemine">
 <meta name="author" content="Pert Lomp">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -117,12 +117,27 @@
         "Product strategy",
         "Organisation design"
       ],
-      "knowsLanguage": ["en", "et"],
+      "knowsLanguage": ["en", "et", "ru"],
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Tallinn",
         "addressCountry": "EE"
       },
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Professional Accreditation",
+          "name": "EMCC Global Individual Accreditation – EIA Practitioner",
+          "identifier": "EIA20240952",
+          "validFrom": "2024-05-13",
+          "expires": "2029-05-13",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "EMCC Global",
+            "url": "https://www.emccglobal.org/"
+          }
+        }
+      ],
       "sameAs": [
         "https://evoluna.app/specialists/pertlomp",
         "https://www.linkedin.com/in/pertlomp/"
@@ -274,24 +289,58 @@
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--pad)}
   .mono{font-family:var(--mono);letter-spacing:.12em;text-transform:uppercase;font-size:11px;font-weight:500}
 
-  /* ========== NAV ========== */
-  .nav{position:sticky;top:0;z-index:40;backdrop-filter:blur(16px);background:color-mix(in oklab, var(--bg) 82%, transparent);border-bottom:1px solid var(--rule)}
-  .nav .inner{display:flex;align-items:center;justify-content:space-between;height:76px;gap:20px}
-  .brand{display:flex;align-items:center;gap:14px;color:var(--fg)}
-  .mark{width:40px;height:40px;border-radius:10px;background:var(--fg);color:var(--bg);display:grid;place-items:center;font-family:var(--display);font-weight:400;font-size:22px;letter-spacing:-.04em;line-height:1;padding-bottom:2px;transition:background .3s,color .3s}
+  /* ========== NAV (mobile-first) ========== */
+  .nav{position:sticky;top:0;z-index:40;backdrop-filter:blur(16px);background:color-mix(in oklab, var(--bg) 86%, transparent);border-bottom:1px solid var(--rule)}
+  .nav .inner{display:flex;align-items:center;justify-content:space-between;height:64px;gap:14px}
+  .brand{display:flex;align-items:center;gap:12px;color:var(--fg);min-width:0}
+  .mark{width:36px;height:36px;border-radius:9px;background:var(--fg);color:var(--bg);display:grid;place-items:center;font-family:var(--display);font-weight:400;font-size:20px;letter-spacing:-.04em;line-height:1;padding-bottom:2px;flex:0 0 auto;transition:background .3s,color .3s}
   .mark.accent{background:var(--accent);color:var(--accent-ink)}
-  .bname{display:flex;flex-direction:column;line-height:1;gap:4px}
-  .bname .n{font-family:var(--display);font-weight:400;font-size:18px;letter-spacing:-.02em;line-height:1}
-  .bname .t{font-family:var(--mono);font-size:9px;letter-spacing:.16em;text-transform:uppercase;opacity:.6;font-weight:500}
-  .navlinks{display:flex;gap:32px;align-items:center;margin-left:auto}
-  .navlinks a{font-size:13px;opacity:.75;transition:opacity .2s;font-weight:400}
+  .bname{display:flex;flex-direction:column;line-height:1;gap:4px;min-width:0}
+  .bname .n{font-family:var(--display);font-weight:400;font-size:17px;letter-spacing:-.02em;line-height:1;white-space:nowrap}
+  .bname .t{font-family:var(--mono);font-size:9px;letter-spacing:.14em;text-transform:uppercase;opacity:.55;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .navlinks{display:none;gap:28px;align-items:center;margin-left:auto}
+  .navlinks a{font-size:13px;opacity:.72;transition:opacity .2s;font-weight:400;white-space:nowrap}
   .navlinks a:hover{opacity:1}
-  .nav-ctrls{display:flex;gap:10px;align-items:center}
-  .toggle{display:inline-flex;align-items:center;border:1px solid var(--rule);border-radius:999px;padding:3px;font-family:var(--mono);font-size:10px;letter-spacing:.08em;font-weight:500;background:var(--bg)}
-  .toggle button{padding:7px 11px;border-radius:999px;opacity:.55;transition:all .25s}
-  .toggle button.on{background:var(--fg);color:var(--bg);opacity:1}
-  .nav-cta{background:var(--accent);color:var(--accent-ink);padding:11px 20px;border-radius:999px;font-weight:600;font-size:13px;transition:transform .2s;white-space:nowrap;display:inline-flex;align-items:center;gap:8px}
+  .nav-ctrls{display:flex;gap:8px;align-items:center;margin-left:auto}
+  .lang-pill{display:inline-flex;align-items:center;border:1px solid var(--rule);border-radius:999px;padding:2px;font-family:var(--mono);font-size:10px;letter-spacing:.08em;font-weight:500;background:var(--bg)}
+  .lang-pill button{padding:6px 10px;border-radius:999px;opacity:.55;transition:all .25s;min-height:28px}
+  .lang-pill button.on,.lang-pill button[aria-pressed="true"]{background:var(--fg);color:var(--bg);opacity:1}
+  .theme-btn-only{display:none;width:36px;height:36px;border-radius:50%;border:1px solid var(--rule);align-items:center;justify-content:center;background:transparent;color:var(--fg);transition:background .2s}
+  .theme-btn-only:hover{background:var(--card)}
+  body[data-theme="light"] .theme-btn-only[data-theme-btn="dark"]{display:inline-flex}
+  body[data-theme="dark"] .theme-btn-only[data-theme-btn="light"]{display:inline-flex}
+  .nav-cta{display:none;background:var(--accent);color:var(--accent-ink);padding:10px 18px;border-radius:999px;font-weight:600;font-size:13px;transition:transform .2s;white-space:nowrap;align-items:center;gap:8px}
   .nav-cta:hover{transform:translateY(-1px)}
+  .menu-btn{display:inline-flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;width:40px;height:40px;border-radius:10px;border:1px solid var(--rule);background:transparent;cursor:pointer}
+  .menu-btn span{display:block;width:18px;height:1.5px;background:var(--fg);transition:transform .25s, opacity .25s}
+  body.menu-open .menu-btn span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+  body.menu-open .menu-btn span:nth-child(2){opacity:0}
+  body.menu-open .menu-btn span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+
+  @media (min-width:900px){
+    .nav .inner{height:76px;gap:20px}
+    .navlinks{display:flex}
+    .nav-cta{display:inline-flex}
+    .menu-btn{display:none}
+    .bname .t{font-size:9.5px}
+  }
+  @media (max-width:520px){
+    .bname .t{display:none}
+    .lang-pill{display:none}
+  }
+
+  /* ========== MOBILE MENU ========== */
+  .mobile-menu{position:fixed;inset:64px 0 0 0;background:var(--bg);z-index:38;transform:translateX(100%);transition:transform .3s ease;overflow-y:auto;border-top:1px solid var(--rule)}
+  .mobile-menu.open{transform:translateX(0)}
+  .mm-inner{display:flex;flex-direction:column;gap:0;padding:24px var(--pad) 40px}
+  .mm-inner > a{font-family:var(--display);font-weight:300;font-size:28px;letter-spacing:-.02em;padding:16px 0;border-bottom:1px solid var(--rule);color:var(--fg);transition:color .2s}
+  .mm-inner > a:hover{color:var(--accent-ink);background:var(--accent);padding:16px 12px;border-radius:8px;border-color:transparent}
+  .mm-controls{display:flex;gap:12px;align-items:center;margin-top:28px;flex-wrap:wrap}
+  .mm-controls .lang-pill{display:inline-flex}
+  .mm-cta{margin-top:24px;background:var(--accent);color:var(--accent-ink);padding:18px 26px;border-radius:999px;font-weight:600;font-size:15px;display:inline-flex;align-items:center;justify-content:center;gap:10px;align-self:flex-start;transition:transform .2s}
+  .mm-cta:hover{transform:translateY(-2px)}
+  body.menu-open{overflow:hidden}
+  @media (min-width:900px){.mobile-menu{display:none}}
 
   /* ========== HERO ========== */
   .hero{position:relative;padding:clamp(40px,5vw,72px) 0 clamp(56px,7vw,96px);overflow:hidden}
@@ -308,8 +357,9 @@
 
   h1.hero-title{
     font-family:var(--display);font-weight:300;
-    font-size:clamp(52px, 10vw, 156px);line-height:.9;letter-spacing:-.035em;margin:0;text-wrap:pretty;
+    font-size:clamp(40px, 8.5vw, 140px);line-height:.95;letter-spacing:-.035em;margin:0;text-wrap:pretty;
   }
+  @media (min-width:600px){h1.hero-title{line-height:.9}}
   h1.hero-title em{font-style:italic;font-weight:300}
   h1.hero-title .u{background-image:linear-gradient(transparent 62%, color-mix(in oklab, var(--accent) 70%, transparent) 62%, color-mix(in oklab, var(--accent) 70%, transparent) 92%, transparent 92%);background-size:100% 100%;padding:0 2px}
   h1.hero-title .sans{font-family:var(--sans);font-weight:500;letter-spacing:-.04em}
@@ -500,28 +550,25 @@
   .svc-footnote{margin-top:32px;font-size:13px;opacity:.65;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
   .svc-footnote::before{content:"";width:24px;height:1px;background:var(--fg);opacity:.4}
 
-  /* ========== QUOTE / TESTIMONIALS ========== */
-  .quote{border-top:1px solid var(--rule)}
-  .quote-body{display:grid;grid-template-columns:repeat(12,1fr);gap:40px;align-items:start}
-  .quote-main{grid-column:1 / span 8}
-  .quote-main blockquote{
-    margin:0;font-family:var(--display);font-weight:300;font-style:italic;
-    font-size:clamp(28px,3.8vw,52px);line-height:1.12;letter-spacing:-.02em;text-wrap:balance;
-  }
-  .quote-main blockquote::before{content:"“";color:var(--accent);margin-right:.04em}
-  .quote-main blockquote::after{content:"”";color:var(--accent)}
-  .quote-attr{margin-top:36px;display:flex;gap:16px;align-items:center}
-  .quote-attr .av{width:48px;height:48px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-family:var(--display);font-style:italic;font-weight:300;font-size:22px;letter-spacing:-.02em}
-  .quote-attr .who strong{display:block;font-weight:600;font-size:15px}
-  .quote-attr .who span{font-size:13px;opacity:.65}
-  .quote-side{grid-column:10 / span 3;display:flex;flex-direction:column;gap:12px;align-items:flex-end}
-  .quote-counter{font-family:var(--mono);font-size:11px;opacity:.5;letter-spacing:.12em}
-  .quote-nav{display:flex;gap:8px}
-  .quote-nav button{
-    width:44px;height:44px;border-radius:50%;border:1px solid var(--rule);display:grid;place-items:center;transition:background .2s;
-  }
-  .quote-nav button:hover{background:var(--card)}
-  .quote-nav button svg{width:16px;height:16px}
+  /* ========== WHAT LEADERS BRING ========== */
+  .bring{border-top:1px solid var(--rule)}
+  .bring-intro{font-size:clamp(16px,1.2vw,18px);line-height:1.65;opacity:.85;max-width:60ch;margin:-32px 0 40px}
+  .bring-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:1px solid var(--rule)}
+  .bring-list li{font-family:var(--display);font-weight:300;font-style:italic;font-size:clamp(18px,1.6vw,24px);line-height:1.35;letter-spacing:-.01em;padding:24px 24px 24px 56px;border-bottom:1px solid var(--rule);position:relative;text-wrap:pretty}
+  .bring-list li:nth-child(odd){border-right:1px solid var(--rule)}
+  .bring-list li::before{content:"·";color:var(--accent);position:absolute;left:24px;top:22px;font-size:1.6em;font-weight:600;font-style:normal}
+  @media (max-width:800px){.bring-list{grid-template-columns:1fr} .bring-list li:nth-child(odd){border-right:0}}
+
+  /* ========== SELECTED THINKING ========== */
+  .thinking{border-top:1px solid var(--rule)}
+  .thinking-intro{font-size:clamp(15px,1.15vw,17px);line-height:1.65;opacity:.85;max-width:60ch;margin:-32px 0 40px}
+  .thinking-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+  .th-card{padding:32px 28px;border-radius:20px;background:var(--card);border:1px solid var(--rule);display:flex;flex-direction:column;gap:14px;min-height:200px;opacity:.78;transition:opacity .25s, transform .25s, border-color .25s}
+  .th-card:hover{opacity:1;transform:translateY(-2px);border-color:color-mix(in oklab, var(--accent) 50%, var(--rule))}
+  .th-card .th-tag{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;opacity:.55;font-weight:500}
+  .th-card h3{font-family:var(--display);font-weight:300;font-size:clamp(22px,1.9vw,26px);line-height:1.2;letter-spacing:-.02em;margin:0;text-wrap:pretty}
+  .th-card p{margin:0;font-size:14.5px;line-height:1.6;opacity:.85;max-width:46ch}
+  @media (max-width:800px){.thinking-grid{grid-template-columns:1fr}}
 
   /* ========== EVOLUNA FOUNDER SECTION ========== */
   .evoluna-section{border-top:1px solid var(--rule);background:var(--card-2)}
@@ -580,6 +627,7 @@
   .cta-squiggle svg{width:100%;height:100%}
 
   /* ========== FOOTER ========== */
+  .foot-creds{font-size:11px;font-family:var(--mono);letter-spacing:.04em;line-height:1.7;opacity:.6;margin-top:8px}
   footer{border-top:1px solid var(--rule);padding:72px 0 28px;font-size:14px}
   .foot-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:32px;align-items:start}
   .foot-brand{grid-column:1 / span 4;display:flex;flex-direction:column;gap:18px}
@@ -590,27 +638,18 @@
   .foot-col a:hover{opacity:1;color:var(--accent-ink);background:var(--accent);padding:2px 4px;margin:-2px -4px;border-radius:4px}
   .foot-bottom{margin-top:64px;padding-top:24px;border-top:1px solid var(--rule);display:flex;justify-content:space-between;align-items:center;font-size:12px;opacity:.6;gap:12px;flex-wrap:wrap}
 
-  /* ========== TWEAKS PANEL ========== */
-  .tw{position:fixed;right:20px;bottom:20px;z-index:50;background:#fff;color:#0D1C93;border-radius:16px;box-shadow:0 20px 60px rgba(0,0,0,.25);padding:18px;min-width:260px;max-width:320px;font-family:var(--sans);font-size:13px;display:none}
-  .tw.on{display:block}
-  .tw h6{margin:0 0 10px;font-size:10px;font-family:var(--mono);letter-spacing:.1em;text-transform:uppercase;opacity:.55;font-weight:500}
-  .tw-group+.tw-group{margin-top:14px;padding-top:14px;border-top:1px solid rgba(13,28,147,.1)}
-  .tw-row{display:flex;gap:6px;flex-wrap:wrap}
-  .tw-chip{flex:1;min-width:0;padding:8px 10px;border:1px solid rgba(13,28,147,.2);border-radius:999px;background:#fff;color:#0D1C93;cursor:pointer;font-size:12px;font-weight:500;text-align:center}
-  .tw-chip.on{background:#0D1C93;color:#fff;border-color:#0D1C93}
-  .tw-input{width:100%;padding:8px 10px;border:1px solid rgba(13,28,147,.2);border-radius:8px;background:#fff;color:#0D1C93;font-family:inherit;font-size:12px}
-  .tw-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
-  .tw-title strong{font-size:13px;font-weight:600}
+  /* ========== TWEAKS panel removed (was dev-only, never to ship) ========== */
 
   /* ========== RESPONSIVE ========== */
   @media (max-width:1000px){
-    .hero-grid{grid-template-columns:1fr;gap:40px}
-    .hero-right{order:-1}
-    .portrait-wrap{aspect-ratio:3/2;max-height:520px}
+    .hero{padding:clamp(24px,4vw,48px) 0 clamp(40px,5vw,72px)}
+    .hero-grid{grid-template-columns:1fr;gap:32px}
+    .hero-right{order:2}
+    .portrait-wrap{aspect-ratio:4/3;max-height:480px}
     .portrait-wrap img{object-position:center 18%}
-    .hero-creds{grid-template-columns:1fr}
-    .hero-creds .row{grid-template-columns:repeat(2,1fr)}
-    .navlinks{display:none}
+    .hero-lede{font-size:16px}
+    .hero-creds{grid-template-columns:1fr;margin-top:clamp(36px,5vw,56px)}
+    .hero-creds .row{grid-template-columns:repeat(2,1fr);gap:24px}
     .about-prose,.about-facts,.signature{grid-column:1/-1}
     .spec-intro,.badge-cloud{grid-column:1/-1}
     .pillar{grid-column:span 12}
@@ -618,17 +657,22 @@
     .step{grid-column:span 6}
     .svc{grid-column:span 12}
     .svc.feature{grid-template-columns:1fr}
-    .quote-main,.quote-side{grid-column:1/-1}
-    .quote-side{align-items:flex-start}
     .cta h2,.cta-side{grid-column:1/-1}
     .foot-brand,.foot-col{grid-column:span 6}
     details.q summary{gap:18px;grid-template-columns:1fr auto}
     details.q .qnum{grid-column:1/-1;padding-top:0;margin-bottom:-18px}
     details.q .qans{padding-left:0}
+    section{padding:clamp(56px,8vw,120px) 0}
+    .sect-head{margin-bottom:48px}
   }
   @media (max-width:600px){
     .foot-col{grid-column:span 12}
-    .hero-creds .row{grid-template-columns:1fr 1fr;gap:24px}
+    .hero-creds .row{grid-template-columns:1fr;gap:18px}
+    .hero-cta-row{flex-direction:column;align-items:stretch;gap:10px}
+    .hero-cta-row .btn-primary,.hero-cta-row .btn-ghost{justify-content:center}
+    .hero-top{flex-direction:column;align-items:flex-start;gap:8px}
+    .pad-narrow{padding-left:16px;padding-right:16px}
+    .evo-block{gap:32px}
   }
   /* ========== ACCESSIBILITY ========== */
   .skip-link{position:absolute;top:-100px;left:0;background:var(--fg);color:var(--bg);padding:12px 20px;z-index:100;border-radius:0 0 8px 0;font-size:13px;font-weight:600;transition:top .2s}
@@ -679,7 +723,7 @@
       "name": "How does booking and payment work?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "All sessions are booked and paid through Evoluna.app, the platform I am building. You see the live calendar, pick a slot, pay by card. Cancellation up to 24 hours before the session. No invoicing back-and-forth, no credit-card chasing."
+        "text": "All sessions are booked and paid through Evoluna.app, the platform I am building. You see the live calendar, pick a slot, pay by card. Cancellation up to 24 hours before the session. Clear booking, payment and cancellation, all in one place."
       }
     },
     {
@@ -729,34 +773,64 @@
       <div class="mark" aria-hidden="true">P</div>
       <div class="bname">
         <span class="n">Pert Lomp</span>
-        <span class="t" data-i18n="nav-tag">STRATEGIC ADVISOR · EXECUTIVE MENTOR · EVOLUNA FOUNDER</span>
+        <span class="t" data-i18n="nav-tag">Strategic Advisor · Executive Mentor</span>
       </div>
     </a>
     <div class="navlinks">
       <a href="#about" data-i18n="nav-about">About</a>
       <a href="#why" data-i18n="nav-why">When to call</a>
-      <a href="#expertise" data-i18n="nav-expertise">Focus areas</a>
+      <a href="#expertise" data-i18n="nav-expertise">Focus</a>
       <a href="#approach" data-i18n="nav-approach">Approach</a>
-      <a href="#services" data-i18n="nav-services">Engagement</a>
       <a href="#evoluna" data-i18n="nav-evoluna">Evoluna</a>
-      <a href="#faq">FAQ</a>
+      <a href="#contact" data-i18n="nav-contact">Contact</a>
     </div>
     <div class="nav-ctrls">
-      <div class="toggle" role="tablist" aria-label="Language">
-        <button type="button" data-lang-btn="en" class="on">EN</button>
-        <button type="button" data-lang-btn="et">ET</button>
+      <div class="lang-pill" role="tablist" aria-label="Language">
+        <button type="button" data-lang-btn="en" class="on" aria-pressed="true">EN</button>
+        <button type="button" data-lang-btn="et" aria-pressed="false">ET</button>
       </div>
-      <div class="toggle" role="tablist" aria-label="Theme">
-        <button type="button" data-theme-btn="light" class="on" aria-label="Light">☀</button>
-        <button type="button" data-theme-btn="dark" aria-label="Dark">☾</button>
-      </div>
+      <button type="button" class="theme-btn-only" data-theme-btn="dark" aria-label="Toggle dark mode" title="Toggle theme">
+        <svg class="ic-dark" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button type="button" class="theme-btn-only" data-theme-btn="light" aria-label="Toggle light mode" title="Toggle theme">
+        <svg class="ic-light" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
       <a class="nav-cta" href="https://evoluna.app/specialists/pertlomp" target="_blank" rel="noopener">
-        <span data-i18n="nav-cta">Book a session</span>
+        <span data-i18n="nav-cta">Broneeri Evolunas</span>
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
       </a>
+      <button id="menu-btn" class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </div>
 </nav>
+<aside id="mobile-menu" class="mobile-menu" aria-label="Mobile menu">
+  <div class="mm-inner">
+    <a href="#about" data-i18n="nav-about">About</a>
+    <a href="#why" data-i18n="nav-why">When to call</a>
+    <a href="#expertise" data-i18n="nav-expertise">Focus</a>
+    <a href="#approach" data-i18n="nav-approach">Approach</a>
+    <a href="#services" data-i18n="nav-services">Engagement</a>
+    <a href="#evoluna" data-i18n="nav-evoluna">Evoluna</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact" data-i18n="nav-contact">Contact</a>
+    <div class="mm-controls">
+      <div class="lang-pill" role="tablist" aria-label="Language">
+        <button type="button" data-lang-btn="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang-btn="et" aria-pressed="false">ET</button>
+      </div>
+      <div class="lang-pill" role="tablist" aria-label="Theme">
+        <button type="button" data-theme-btn="light" aria-label="Light">☀</button>
+        <button type="button" data-theme-btn="dark" aria-label="Dark">☾</button>
+      </div>
+    </div>
+    <a class="mm-cta" href="https://evoluna.app/specialists/pertlomp" target="_blank" rel="noopener">
+      <span data-i18n="nav-cta">Broneeri Evolunas</span>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+    </a>
+  </div>
+</aside>
 
 <main id="main">
 
@@ -782,12 +856,12 @@
           to <span class="u">clarity</span>,<br>
           <span class="sans">structure</span> &amp; <em>decisions.</em>
         </h1>
-        <p class="hero-lede" data-i18n="hero-lede">
-          <strong>Strategic thinking partner</strong> for founders, CTOs, executives and organisations navigating complexity in the age of AI. 25+ years across technology, media, business development and strategy — combined with practical mentoring and systems thinking. No motivation talk. No sugar-coating. The work is to think more clearly and decide better.
+        <p class="hero-lede" data-i18n-html="hero-lede">
+          <strong>Strategic thinking partner</strong> for founders, CTOs, executives and organisations navigating complexity in the age of AI. 25+ years across technology, media, business development and strategy, combined with practical mentoring and systems thinking. The work is to think more clearly, decide better, and turn complexity into structured forward movement.
         </p>
         <div class="hero-cta-row">
           <a class="btn-primary" href="https://evoluna.app/specialists/pertlomp" target="_blank" rel="noopener">
-            <span data-i18n="hero-cta">Book a strategic conversation</span>
+            <span data-i18n="hero-cta">Book on Evoluna</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
           <a class="btn-ghost" href="#why" data-i18n="hero-cta-alt">When to call →</a>
@@ -978,9 +1052,9 @@
       <article class="pillar feature">
         <div>
           <div class="tag" data-i18n="p0-tag">— OPERATING PRINCIPLE</div>
-          <h3 data-i18n-html="p0-title" style="margin-top:16px">An honest mirror first. The <em style="color:var(--accent)">nice version</em> can wait.</h3>
+          <h3 data-i18n-html="p0-title" style="margin-top:16px">Respectful honesty before <em style="color:var(--accent)">comfortable wording.</em></h3>
         </div>
-        <p data-i18n="p0-body">Most people who book a session already know two thirds of the answer. The work is to look at it directly, name it, and stop spending the next quarter avoiding it. That is what an outside frame is for. Confidential by default. No theatrical empathy, no rehearsed encouragement.</p>
+        <p data-i18n="p0-body">Most people who book a session already know two thirds of the answer. The work is to look at it directly, name it, and stop spending the next quarter avoiding it. That is what an outside frame is for. Confidential by default. No performance, no unnecessary softness, just clear and respectful reflection.</p>
         <div class="feat-path" aria-hidden="true">
           <svg viewBox="0 0 600 400" fill="none" preserveAspectRatio="none">
             <path d="M 0 200 C 75 50, 150 50, 225 200 S 375 350, 450 200 S 600 50, 600 200" stroke="currentColor" stroke-width="8" stroke-linecap="round" fill="none"/>
@@ -1101,32 +1175,25 @@
   </div>
 </section>
 
-<!-- ========== QUOTE / TESTIMONIALS ========== -->
-<section class="quote">
+<!-- ========== WHAT LEADERS BRING ========== -->
+<section id="bring" class="bring">
   <div class="wrap">
     <div class="sect-head">
       <div class="sect-index">05</div>
-      <div class="sect-eyebrow"><div class="mono" data-i18n="s5-eye">Mentees on working with me</div></div>
+      <div class="sect-eyebrow"><div class="mono" data-i18n="sb-eye">In the room</div></div>
+      <h2 class="sect-title" data-i18n-html="sb-title">What leaders <em>actually</em> bring<br>into the room.</h2>
     </div>
-    <div class="quote-body">
-      <div class="quote-main">
-        <blockquote id="quote-text"></blockquote>
-        <div class="quote-attr">
-          <div class="av" id="quote-av">L</div>
-          <div class="who">
-            <strong id="quote-name">—</strong>
-            <span id="quote-role">—</span>
-          </div>
-        </div>
-      </div>
-      <div class="quote-side">
-        <div class="quote-counter" id="quote-counter">01 / 03</div>
-        <div class="quote-nav">
-          <button id="q-prev" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button>
-          <button id="q-next" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></button>
-        </div>
-      </div>
-    </div>
+    <p class="bring-intro" data-i18n="sb-intro">Real questions, not packaged ones. The patterns repeat across founders, CTOs and senior operators. A few examples from recent engagements, anonymised by default.</p>
+    <ul class="bring-list">
+      <li data-i18n="sb-1">A pivot-or-commit decision the board has been circling for two quarters.</li>
+      <li data-i18n="sb-2">A senior hire that is not landing, and the conversation no one wants to have.</li>
+      <li data-i18n="sb-3">An AI rollout that is moving faster than the company's operating system can absorb.</li>
+      <li data-i18n="sb-4">A co-founder relationship where everything is fine on the surface and quietly not.</li>
+      <li data-i18n="sb-5">A leader who has stopped trusting their own judgment and is deciding by committee.</li>
+      <li data-i18n="sb-6">A career inflection point that is harder to articulate than to feel.</li>
+      <li data-i18n="sb-7">A negotiation, an exit conversation, a board pitch that has to land in one go.</li>
+      <li data-i18n="sb-8">The quiet question behind all of the above: what is actually mine to carry, and what is not.</li>
+    </ul>
   </div>
 </section>
 
@@ -1178,7 +1245,7 @@
     </div>
     <div class="evo-block">
       <div class="evo-prose">
-        <p data-i18n="evo-p1"><strong>Evoluna is the platform I am building.</strong> An AI-powered marketplace that helps people find the right mentor, coach or therapist — based on what they are actually working through, not on who has the loudest profile.</p>
+        <p data-i18n-html="evo-p1"><strong>Evoluna is the platform I am building.</strong> An AI-powered marketplace that helps people find the right mentor, coach or therapist, based on what they are actually working through, not on who has the loudest profile.</p>
         <p data-i18n="evo-p2">My own bookings move through Evoluna because the platform settles the parts that should not need a separate conversation: a verified profile, a clear price, a secure payment, a real calendar, a clean cancellation policy. The room itself can stay focused on the work.</p>
         <p data-i18n="evo-p3">It also keeps the relationship honest. You see what I do, what it costs, how it is delivered, and how to leave — all in one place, on neutral ground.</p>
         <div class="evo-cta-row">
@@ -1214,6 +1281,40 @@
     </a>
   </div>
 </div>
+
+<!-- ========== SELECTED THINKING ========== -->
+<section id="thinking" class="thinking">
+  <div class="wrap">
+    <div class="sect-head">
+      <div class="sect-index">08</div>
+      <div class="sect-eyebrow"><div class="mono" data-i18n="st-eye">Selected thinking</div></div>
+      <h2 class="sect-title" data-i18n-html="st-title">Notes on the <em>work.</em></h2>
+    </div>
+    <p class="thinking-intro" data-i18n="st-intro">A few directions I keep coming back to. Long-form essays are in progress, drafts ship to a small list first.</p>
+    <div class="thinking-grid">
+      <article class="th-card">
+        <div class="th-tag" data-i18n="st-c1-tag">— ESSAY · COMING SOON</div>
+        <h3 data-i18n="st-c1-h">AI and the future of leadership</h3>
+        <p data-i18n="st-c1-p">What changes when the answer machine is faster than the question machine. Decisions, hiring, ethics, pace, the role of the human at the top.</p>
+      </article>
+      <article class="th-card">
+        <div class="th-tag" data-i18n="st-c2-tag">— ESSAY · COMING SOON</div>
+        <h3 data-i18n="st-c2-h">Strategic clarity in complex systems</h3>
+        <p data-i18n="st-c2-p">Why most strategy work fails not on the slide but in the second-order effects. Frames for thinking about systems that look stable until they are not.</p>
+      </article>
+      <article class="th-card">
+        <div class="th-tag" data-i18n="st-c3-tag">— ESSAY · COMING SOON</div>
+        <h3 data-i18n="st-c3-h">Mentorship and decision quality</h3>
+        <p data-i18n="st-c3-p">Mentoring is not transferring confidence. It is building the muscle to look at a hard decision honestly, on your own, when no one else is in the room.</p>
+      </article>
+      <article class="th-card">
+        <div class="th-tag" data-i18n="st-c4-tag">— ESSAY · COMING SOON</div>
+        <h3 data-i18n="st-c4-h">Technology, power and organisational change</h3>
+        <p data-i18n="st-c4-p">Where new technology meets old org charts is where most companies actually live. The negotiation is not technical, it is structural and political.</p>
+      </article>
+    </div>
+  </div>
+</section>
 
 <!-- ========== FAQ ========== -->
 <section id="faq" class="faq">
@@ -1300,10 +1401,11 @@
         <div class="mark" aria-hidden="true">P</div>
         <div class="bname">
           <span class="n">Pert Lomp</span>
-          <span class="t" data-i18n="nav-tag">CERTIFIED MENTOR · EVOLUNA</span>
+          <span class="t" data-i18n="foot-tagline">STRATEGIC ADVISOR · EXECUTIVE MENTOR · EVOLUNA FOUNDER</span>
         </div>
       </div>
-      <p data-i18n="foot-tag">Strategic advisor, executive mentor and systems thinker for founders, CTOs, executives and organisations. Founder of Evoluna. Bookings via Evoluna.app.</p>
+      <p data-i18n="foot-tag">Strategic advisor, executive mentor and systems thinker for founders, CTOs, executives and organisations navigating complexity in the age of AI. Founder of Evoluna. Bookings via Evoluna.app.</p>
+      <div class="foot-creds" data-i18n-html="foot-creds">EMCC Global EIA Practitioner · No. EIA20240952 · valid 2024–2029<br>Member · Eesti Mentorite Koda</div>
     </div>
     <div class="foot-col">
       <h5 data-i18n="foot-h1">Explore</h5>
@@ -1340,66 +1442,22 @@
   </div>
 </footer>
 
-<!-- ========== TWEAKS (hidden in production) ========== -->
-<div class="tw" id="tw" hidden>
-  <div class="tw-title">
-    <strong>Tweaks</strong>
-    <button id="tw-close" aria-label="Close" style="font-size:18px;line-height:1">×</button>
-  </div>
-
-  <div class="tw-group">
-    <h6>Theme</h6>
-    <div class="tw-row" data-group="theme">
-      <button class="tw-chip" data-val="light">Light</button>
-      <button class="tw-chip" data-val="dark">Dark</button>
-    </div>
-  </div>
-
-  <div class="tw-group">
-    <h6>Language</h6>
-    <div class="tw-row" data-group="lang">
-      <button class="tw-chip" data-val="en">English</button>
-      <button class="tw-chip" data-val="et">Eesti</button>
-    </div>
-  </div>
-
-  <div class="tw-group">
-    <h6>Motif intensity</h6>
-    <div class="tw-row" data-group="motif">
-      <button class="tw-chip" data-val="bold">Bold</button>
-      <button class="tw-chip" data-val="subtle">Subtle</button>
-      <button class="tw-chip" data-val="off">Off</button>
-    </div>
-  </div>
-
-  <div class="tw-group">
-    <h6>Layout</h6>
-    <div class="tw-row" data-group="layout">
-      <button class="tw-chip" data-val="editorial">Editorial</button>
-      <button class="tw-chip" data-val="compact">Compact</button>
-    </div>
-  </div>
-
-  <div class="tw-group">
-    <h6>Lead rate (EUR / 60 min)</h6>
-    <input class="tw-input" id="tw-rate" type="text">
-  </div>
-</div>
+<!-- (Tweaks panel removed for production) -->
 
 <script>
   const I18N = {
     en:{},
     et:{
-      "nav-tag":"STRATEEGILINE NÕUSTAJA · MENTOR · EVOLUNA ASUTAJA",
-      "nav-about":"Minust","nav-why":"Millal helistada","nav-expertise":"Fookus","nav-approach":"Metoodika","nav-services":"Koostöö","nav-evoluna":"Evoluna","nav-process":"Protsess",
-      "nav-cta":"Alusta vestlust",
+      "nav-tag":"Strateegiline nõustaja · Juhtide mentor",
+      "nav-about":"Minust","nav-why":"Millal pöörduda","nav-expertise":"Fookus","nav-approach":"Metoodika","nav-services":"Koostöö","nav-evoluna":"Evoluna","nav-process":"Protsess","nav-contact":"Kontakt",
+      "nav-cta":"Broneeri Evolunas",
 
       "hero-loc":"TALLINN · EESTI · KAUGTÖÖ KOGU MAAILMAS",
       "hero-status":"VÕTAN VASTU UUSI KOOSTÖÖSID · 2026",
       "hero-eyebrow":"STRATEEGILINE NÕUSTAJA · MENTOR · EVOLUNA ASUTAJA",
       "hero-title":"<em>Kaosest</em><br>selguse,<br><span class=\"sans\">struktuuri</span> ja <em>otsusteni.</em>",
-      "hero-lede":"<strong>Strateegiline mõttepartner</strong> asutajatele, CTO-dele, juhtidele ja organisatsioonidele, kes liiguvad läbi keerukuse AI-ajastul. 25+ aastat tehnoloogias, meedias, äriarenduses ja strateegias, ühendatud praktilise mentorluse ja süsteemse mõtlemisega. Mitte motivatsioon. Mitte ilustamine. Töö on mõelda selgemalt ja otsustada paremini.",
-      "hero-cta":"Broneeri strateegiline vestlus","hero-cta-alt":"Millal helistada →",
+      "hero-lede":"<strong>Strateegiline mõttepartner</strong> asutajatele, CTO-dele, juhtidele ja organisatsioonidele, kes liiguvad läbi keerukuse AI-ajastul. 25+ aastat tehnoloogias, meedias, äriarenduses ja strateegias, ühendatud praktilise mentorluse ja süsteemse mõtlemisega. Töö on mõelda selgemalt, otsustada paremini ja muuta keerukus struktureeritud edasiliikumiseks.",
+      "hero-cta":"Broneeri Evolunas","hero-cta-alt":"Millal pöörduda →",
       "hero-proof":"Broneerimine ja makse läbi Evoluna · konfidentsiaalne · online või Tallinnas",
 
       "portrait-badge":"Sertifitseeritud Mentor",
@@ -1445,8 +1503,8 @@
       "s3-eye":"Metoodika",
       "s3-title":"Neli <em>töötavat</em> uskumust.",
       "p0-tag":"— PÕHIMÕTE",
-      "p0-title":"Aus peegel kõigepealt. <em style=\"color:var(--accent)\">Ilus jutt</em> saab oodata.",
-      "p0-body":"Enamik inimesi, kes seansi broneerivad, teavad juba kahte kolmandikku vastusest. Töö on vaadata seda otse, nimetada see ja lõpetada järgmise kvartali kulutamine selle vältimiseks. Selleks ongi väline raam. Konfidentsiaalsus vaikimisi. Ei teatraalsust, ei harjutatud julgustust.",
+      "p0-title":"Lugupidav ausus enne <em style=\"color:var(--accent)\">mugavat sõnastust.</em>",
+      "p0-body":"Enamik inimesi, kes seansi broneerivad, teavad juba kahte kolmandikku vastusest. Töö on vaadata seda otse, nimetada see ja lõpetada järgmise kvartali kulutamine selle vältimiseks. Selleks ongi väline raam. Konfidentsiaalsus vaikimisi. Ilma esinemiseta, ilma asjatu pehmenduseta, selge ja lugupidav peegeldus.",
       "p1-title":"Süsteemid võidavad<br><em>tahtejõu</em>.",
       "p1-body":"Distsipliin on lõplik. Töö ümber olev rütm, iganädalased ülevaatused, otsuste päevik, kalendrihügieen, rituaalid, mis halba nädalat üle elavad, on see, mis kannab suuri eesmärke päris ellu. Ehitame igavad tellingud, et huvitavad asjad iseenesest juhtuksid.",
       "p1-tag":"— STRUKTUUR",
@@ -1492,7 +1550,18 @@
       "svc5-cta":"Broneeri Evolunas →",
       "svc-footnote":"Kõik broneeringud ja maksed Evoluna kaudu · kinnitatud mentori profiil · tühistamine kuni 24h enne kohtumist · mitme seansi kokkulepped ja meeskonnatööd eraldi.",
 
-      "s5-eye":"Koostööpartnerite hääl",
+      "sb-eye":"Toas",
+      "sb-title":"Mida juhid <em>tegelikult</em> tuppa<br>kaasa toovad.",
+      "sb-intro":"Päris küsimused, mitte pakendatud. Mustrid korduvad asutajate, CTO-de ja kõrgemate operaatorite vahel. Mõned näited hiljutistest koostöödest, vaikimisi anonümiseeritud.",
+      "sb-1":"Pööra-või-jätka otsus, mille ümber juhatus on käinud kaks kvartalit.",
+      "sb-2":"Kõrgele värvatud inimene, kes ei istu rolli, ja vestlus, mida keegi pidada ei taha.",
+      "sb-3":"AI juurutus, mis liigub kiiremini, kui ettevõtte operatsioonisüsteem suudab vastu võtta.",
+      "sb-4":"Kaasasutajate suhe, kus kõik on pinnal korras ja vaikselt mitte.",
+      "sb-5":"Juht, kes on lõpetanud oma otsustusvõimet usaldamast ja otsustab komitee kaudu.",
+      "sb-6":"Karjääri pöördepunkt, mida on raskem sõnastada kui tunnetada.",
+      "sb-7":"Läbirääkimised, lahkumisvestlus, juhatuse esitlus, mis peab korraga klapitama.",
+      "sb-8":"Vaikne küsimus kõige selle taga: mida ma tegelikult ise kandma pean ja mida mitte.",
+      "s5-eye":"Toas",
 
       "s6-eye":"Kuidas see toimib",
       "s6-title":"Lihtne <em>rütm</em>.<br>Neli sammu.",
@@ -1525,45 +1594,35 @@
       "faq7-q":"Kas kõik on konfidentsiaalne?","faq7-a":"Jah. Midagi ei lahku ruumist. Xpert Media OÜ töötab GDPR-i raames ja konfidentsiaalsus on iga koostöö vaikimisi. Mitte mingeid juhtumiuuringuid, mitte nimepidi anekdoote, mitte LinkedIn postitusi. NDA-d kättesaadavad nõudmisel, kui kontekst seda nõuab.",
       "faq8-q":"Mis siis, kui me ei sobi?","faq8-a":"Tajume seda tavaliselt esimese seansi viieteistkümne minuti jooksul ja ma ütlen seda otse. Kui ma tean kedagi sobivamat, suunan sinna. Sobimatu ei ole kellegi süü. See on info.",
 
+      "st-eye":"Valitud mõttesuunad",
+      "st-title":"Märkmed <em>töö</em> kohta.",
+      "st-intro":"Mõned suunad, mille juurde pidevalt tagasi tulen. Pikemad esseed on töös, mustandid jõuavad esmalt väiksesse nimekirja.",
+      "st-c1-tag":"— ESSEE · TULEKUL",
+      "st-c1-h":"AI ja juhtimise tulevik",
+      "st-c1-p":"Mis muutub, kui vastusemasin on kiirem kui küsimusemasin. Otsused, värbamine, eetika, tempo, inimese roll tipus.",
+      "st-c2-tag":"— ESSEE · TULEKUL",
+      "st-c2-h":"Strateegiline selgus keerukates süsteemides",
+      "st-c2-p":"Miks enamik strateegiatöid kukub mitte slaidil, vaid teise järgu mõjudes. Raamistused mõtlemiseks süsteemide üle, mis näevad stabiilsed välja, kuni ei näe.",
+      "st-c3-tag":"— ESSEE · TULEKUL",
+      "st-c3-h":"Mentorlus ja otsuste kvaliteet",
+      "st-c3-p":"Mentorlus ei ole enesekindluse ülekandmine. See on lihaste kasvatamine vaadata raskele otsusele otsa ausalt, üksinda, kui ruumis pole kedagi teist.",
+      "st-c4-tag":"— ESSEE · TULEKUL",
+      "st-c4-h":"Tehnoloogia, võim ja organisatsiooniline muutus",
+      "st-c4-p":"Seal, kus uus tehnoloogia kohtub vana organisatsiooni-skeemiga, elab enamik ettevõtteid. Läbirääkimine ei ole tehniline, vaid struktuurne ja poliitiline.",
+
       "cta-title":"Kui <em>otsus</em> on oluline,<br>alusta <span class=\"acc\">selgusest.</span>",
       "cta-body":"Too päris küsimus. Mina toon struktuuri, ausa peegli ja süsteemse mõtlemise. Ülejäänu teeb ruum.",
       "cta-btn":"Broneeri Evolunas",
       "cta-alt":"Eelistad kirjutada?","cta-alt2":"Või helista:",
 
-      "foot-tag":"Strateegiline nõustaja, mentor ja süsteemne mõtleja asutajatele, CTO-dele, juhtidele ja organisatsioonidele. Evoluna asutaja. Broneeringud Evoluna.app kaudu.",
+      "foot-tagline":"STRATEEGILINE NÕUSTAJA · JUHTIDE MENTOR · EVOLUNA ASUTAJA",
+      "foot-tag":"Strateegiline nõustaja, juhtide mentor ja süsteemne mõtleja asutajatele, CTO-dele, juhtidele ja organisatsioonidele, kes liiguvad läbi AI-ajastu keerukuse. Evoluna asutaja. Broneeringud Evoluna.app kaudu.",
+      "foot-creds":"EMCC Global EIA Practitioner · nr EIA20240952 · kehtiv 2024–2029<br>Eesti Mentorite Koja liige",
       "foot-h1":"Mine","foot-h2":"Broneeri ja kontakt","foot-h3":"Sotsiaalmeedia","foot-h4":"Juriidika",
       "foot-conf":"Konfidentsiaalsus on iga koostöö vaikimisi. NDA-d kättesaadavad nõudmisel.",
       "foot-id":"Sama visuaalne identiteet kui <a href=\"https://evoluna.app\" target=\"_blank\" rel=\"noopener\" style=\"text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--accent)\">evoluna.app</a>, see on teadlik valik."
     }
   };
-
-  const QUOTES = [
-    {
-      en:{q:"Pert is an impressive mentor with deep understanding of leadership and human relationships. His style is balanced — demanding and focused, yet supportive and understanding. He sees what people actually need and helps them find their own answer.", n:"Liisi K.", r:"Head of department · SaaS"},
-      et:{q:"Pert on muljetavaldav mentor, kellel on sügav arusaam juhtimisest ja inimsuhetest. Tema stiil on tasakaalustatud — nõudlik ja fokuseeritud, aga samal ajal toetav ja mõistev. Ta näeb, mida inimesed tegelikult vajavad, ja aitab neil leida enda vastuse.", n:"Liisi K.", r:"Osakonnajuht · SaaS"}
-    },
-    {
-      en:{q:"Pert adapts to the mentee's needs. When one approach doesn't land, he finds a better one. Through intellectually sharp exercises he got me to look more honestly inward — things I had been quietly avoiding finally reached me.", n:"Herman R.", r:"Founder · Software"},
-      et:{q:"Pert suudab mentorina väga hästi kohaneda. Kui üks lähenemine ei toimi, leiab ta sobivama. Läbi intellektuaalselt teravate harjutuste pani ta mind rohkem enda sisse vaatama ja kohale jõudsid asjad, mida olin vaikselt vältinud.", n:"Herman R.", r:"Asutaja · Tarkvara"}
-    },
-    {
-      en:{q:"The real value is the moment when a ‘click’ happens — when confusion is replaced by understanding, and uncertainty turns into conscious forward movement. Pert creates exactly that space, with no theatrics.", n:"Anna M.", r:"Product lead · Fintech"},
-      et:{q:"Tõeline väärtus on see hetk, kui „klõps“ juhtub — kui segadus asendub mõistmisega ja ebakindlus muutub teadlikuks edasiliikumiseks. Pert loob just selle ruumi, ilma teatraalsuseta.", n:"Anna M.", r:"Tootejuht · Fintech"}
-    }
-  ];
-  let qIdx = 0;
-
-  function pad2(n){return String(n).padStart(2,"0")}
-
-  function renderQuote(){
-    const lang = document.body.dataset.lang || "en";
-    const q = QUOTES[qIdx][lang] || QUOTES[qIdx].en;
-    document.getElementById("quote-text").textContent = q.q;
-    document.getElementById("quote-name").textContent = q.n;
-    document.getElementById("quote-role").textContent = q.r;
-    document.getElementById("quote-av").textContent = q.n.charAt(0).toUpperCase();
-    document.getElementById("quote-counter").textContent = `${pad2(qIdx+1)} / ${pad2(QUOTES.length)}`;
-  }
 
   function applyI18n(){
     const lang = document.body.dataset.lang || "en";
@@ -1581,79 +1640,66 @@
       else el.innerHTML = el.dataset.i18nSrc;
     });
     document.documentElement.lang = lang;
-    renderQuote();
   }
 
-  const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
-    "theme": "light",
-    "lang": "en",
-    "motif": "bold",
-    "layout": "editorial",
-    "rate": "€180"
-  }/*EDITMODE-END*/;
-
-  const state = { ...TWEAK_DEFAULTS };
+  const PREFS_KEY = "pertlomp-prefs";
+  function loadPrefs(){
+    try { return JSON.parse(localStorage.getItem(PREFS_KEY)) || {}; } catch(e){ return {}; }
+  }
+  function savePrefs(p){
+    try { localStorage.setItem(PREFS_KEY, JSON.stringify(p)); } catch(e){}
+  }
+  const stored = loadPrefs();
+  const browserPrefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const state = {
+    theme: stored.theme || (browserPrefersDark ? "dark" : "light"),
+    lang: stored.lang || (navigator.language && navigator.language.toLowerCase().startsWith("et") ? "et" : "en")
+  };
 
   function setTheme(v){
     state.theme = v;
     document.body.dataset.theme = v;
-    document.querySelectorAll("[data-theme-btn]").forEach(b=>b.classList.toggle("on", b.dataset.themeBtn === v));
-    document.querySelectorAll('.tw-row[data-group="theme"] .tw-chip').forEach(c=>c.classList.toggle("on", c.dataset.val === v));
+    document.querySelectorAll("[data-theme-btn]").forEach(b=>{
+      const active = b.dataset.themeBtn === v;
+      b.classList.toggle("on", active);
+      b.setAttribute("aria-pressed", String(active));
+    });
+    savePrefs(state);
   }
   function setLang(v){
     state.lang = v;
     document.body.dataset.lang = v;
-    document.querySelectorAll("[data-lang-btn]").forEach(b=>b.classList.toggle("on", b.dataset.langBtn === v));
-    document.querySelectorAll('.tw-row[data-group="lang"] .tw-chip').forEach(c=>c.classList.toggle("on", c.dataset.val === v));
+    document.querySelectorAll("[data-lang-btn]").forEach(b=>{
+      const active = b.dataset.langBtn === v;
+      b.classList.toggle("on", active);
+      b.setAttribute("aria-pressed", String(active));
+    });
     applyI18n();
-  }
-  function setMotif(v){
-    state.motif = v;
-    const els = document.querySelectorAll(".hero-squiggle, .process-squiggle, .cta-squiggle");
-    const op = v === "off" ? "0" : v === "subtle" ? "0.04" : "";
-    els.forEach(el=>el.style.opacity = op);
-    document.querySelectorAll('.tw-row[data-group="motif"] .tw-chip').forEach(c=>c.classList.toggle("on", c.dataset.val === v));
-  }
-  function setLayout(v){
-    state.layout = v;
-    if (v === "compact") document.documentElement.style.setProperty("--maxw","1180px");
-    else document.documentElement.style.removeProperty("--maxw");
-    document.querySelectorAll('.tw-row[data-group="layout"] .tw-chip').forEach(c=>c.classList.toggle("on", c.dataset.val === v));
+    savePrefs(state);
   }
 
-  function bindChips(group, fn){
-    document.querySelectorAll(`.tw-row[data-group="${group}"] .tw-chip`).forEach(c=>{
-      c.addEventListener("click", ()=>{ fn(c.dataset.val); persist({[group]: c.dataset.val}); });
+  // Mobile menu
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+  if (menuBtn && mobileMenu){
+    menuBtn.addEventListener("click", ()=>{
+      const open = mobileMenu.classList.toggle("open");
+      menuBtn.setAttribute("aria-expanded", String(open));
+      document.body.classList.toggle("menu-open", open);
+    });
+    mobileMenu.querySelectorAll("a").forEach(a=>{
+      a.addEventListener("click", ()=>{
+        mobileMenu.classList.remove("open");
+        menuBtn.setAttribute("aria-expanded", "false");
+        document.body.classList.remove("menu-open");
+      });
     });
   }
-  function bindInput(id, key){
-    const el = document.getElementById(id);
-    if (!el) return;
-    el.value = state[key] || "";
-    el.addEventListener("change", ()=>{ state[key] = el.value; persist({[key]: el.value}); });
-  }
-  function persist(edits){ try{ window.parent.postMessage({type:"__edit_mode_set_keys", edits}, "*"); }catch(e){} }
-
-  window.addEventListener("message", (e)=>{
-    const d = e?.data; if (!d || !d.type) return;
-    if (d.type === "__activate_edit_mode") document.getElementById("tw").classList.add("on");
-    else if (d.type === "__deactivate_edit_mode") document.getElementById("tw").classList.remove("on");
-  });
-  try{ window.parent.postMessage({type:"__edit_mode_available"}, "*"); }catch(e){}
-  document.getElementById("tw-close").addEventListener("click", ()=>document.getElementById("tw").classList.remove("on"));
 
   document.querySelectorAll("[data-theme-btn]").forEach(b=>b.addEventListener("click", ()=>setTheme(b.dataset.themeBtn)));
   document.querySelectorAll("[data-lang-btn]").forEach(b=>b.addEventListener("click", ()=>setLang(b.dataset.langBtn)));
 
-  bindChips("theme", setTheme);
-  bindChips("lang", setLang);
-  bindChips("motif", setMotif);
-  bindChips("layout", setLayout);
-  bindInput("tw-rate","rate");
-
-  document.getElementById("q-prev").addEventListener("click", ()=>{ qIdx = (qIdx - 1 + QUOTES.length) % QUOTES.length; renderQuote(); });
-  document.getElementById("q-next").addEventListener("click", ()=>{ qIdx = (qIdx + 1) % QUOTES.length; renderQuote(); });
-
+  // Smooth scroll for in-page anchors
   document.querySelectorAll('a[href^="#"]').forEach(a=>{
     a.addEventListener("click", e=>{
       const id = a.getAttribute("href").slice(1);
@@ -1664,8 +1710,6 @@
 
   setTheme(state.theme);
   setLang(state.lang);
-  setMotif(state.motif);
-  setLayout(state.layout);
   applyI18n();
 </script>
 
