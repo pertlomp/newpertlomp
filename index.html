@@ -579,6 +579,26 @@
   .bring-list li::before{content:"·";color:var(--accent);position:absolute;left:24px;top:22px;font-size:1.6em;font-weight:600;font-style:normal}
   @media (max-width:800px){.bring-list{grid-template-columns:1fr} .bring-list li:nth-child(odd){border-right:0}}
 
+  
+  /* ========== AI AND THE HUMAN PART ========== */
+  .ai-human{border-top:1px solid var(--rule)}
+  .ah-block{display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:start}
+  .ah-prose{font-size:clamp(16px,1.2vw,18px);line-height:1.65;opacity:.9;text-wrap:pretty}
+  .ah-prose p+p{margin-top:1.1em}
+  .ah-prose strong{font-weight:500;color:var(--fg)}
+  .ah-prose em{font-style:italic;font-weight:400;color:color-mix(in oklab, var(--accent-ink) 100%, transparent)}
+  body[data-theme="dark"] .ah-prose em{color:var(--accent)}
+  .ah-cta-row{display:flex;gap:18px;align-items:center;margin-top:32px;flex-wrap:wrap}
+  .ah-cta-meta{font-size:12px;opacity:.7;letter-spacing:.01em}
+  .ah-compare{display:flex;flex-direction:column;gap:16px}
+  .ah-card{padding:26px 28px;border:1px solid var(--rule);border-radius:18px;background:var(--card)}
+  .ah-card.ah-card-accent{border-color:color-mix(in oklab, var(--accent) 50%, var(--rule));background:color-mix(in oklab, var(--accent) 5%, var(--card))}
+  .ah-card-tag{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;opacity:.7;margin-bottom:12px}
+  .ah-card ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+  .ah-card li{font-size:14.5px;line-height:1.5;padding-left:18px;position:relative}
+  .ah-card li::before{content:"·";color:var(--accent);position:absolute;left:0;top:-3px;font-size:1.5em;font-weight:700}
+  @media (max-width:900px){.ah-block{grid-template-columns:1fr;gap:32px}}
+
   /* ========== WHERE I WRITE ========== */
   .thinking{border-top:1px solid var(--rule)}
   .thinking-intro{font-size:clamp(16px,1.2vw,18px);line-height:1.65;opacity:.85;max-width:60ch;margin:-32px 0 40px}
@@ -740,6 +760,14 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "I have been working actively with AI since late 2022, in real operating contexts, not as a topic but as a tool. The interesting questions at executive level are not which model to call. They are how AI changes decisions, hiring, structure, ethics and pace, and where the company's own operating system needs to be redesigned around it. That conversation is built into the work."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why not just talk to AI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI is an excellent tool for organising thoughts and finding new perspectives. Pert Lomp uses AI as well. But AI does not carry the consequences of your decision. It does not know the silent tensions in your organisation, the expectations of owners, the real dynamics of your team or what you are leaving unsaid. The work of a human thinking partner begins where AI cannot go: deciding, taking responsibility, speaking honestly and turning clarity into behaviour."
       }
     },
     {
@@ -1112,11 +1140,60 @@
   </div>
 </section>
 
+
+<!-- ========== AI AND THE HUMAN PART ========== -->
+<section id="ai-human" class="ai-human">
+  <div class="wrap">
+    <div class="sect-head">
+      <div class="sect-index">05</div>
+      <div class="sect-eyebrow"><div class="mono" data-i18n="ah-eye">AI ja inimene</div></div>
+      <h2 class="sect-title" data-i18n-html="ah-title">AI aitab <em>mõelda.</em><br>Inimene aitab <em>otsustada.</em></h2>
+    </div>
+    <div class="ah-block">
+      <div class="ah-prose">
+        <p data-i18n="ah-p1">AI on täna üks tugevamaid tööriistu mõtete korrastamiseks. Ta aitab kiiresti näha mustreid, sõnastada valikuid, testida argumente ja avada uusi vaatenurki.</p>
+        <p data-i18n="ah-p2">Aga juhtimise tegelikkus ei koosne ainult informatsioonist. Seal on vastutus, inimesed, pinged, ajastus, usaldus, võimusuhted, hirmud, vaikimised ja otsused, mille tagajärgi tuleb ise kanda.</p>
+        <p data-i18n="ah-p3"><strong>AI võib aidata sul mõelda kiiremini. Hea mõttepartner aitab sul näha ausamalt.</strong></p>
+        <p data-i18n="ah-p4">Minu töö algab sageli sealt, kus AI vastus tundub juba mõistlik, aga inimene teab sisimas, et tegelik küsimus on veel lahti. Mis jääb ütlemata? Millist vestlust välditakse? Mis on loogiliselt õige, aga inimlikult kandevõimetu? Kus on päris otsus?</p>
+        <p data-i18n="ah-p5"><em>AI annab võimalusi. Inimene aitab valida.</em></p>
+        <div class="ah-cta-row">
+          <a class="btn-primary" href="https://evoluna.app/specialists/pertlomp" target="_blank" rel="noopener">
+            <span data-i18n="ah-cta">Broneeri vestlus</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <span class="ah-cta-meta" data-i18n="ah-cta-meta">Broneerimine ja makse Evoluna kaudu.</span>
+        </div>
+      </div>
+      <aside class="ah-compare">
+        <div class="ah-card">
+          <div class="ah-card-tag" data-i18n="ah-c1-tag">— AI sobib hästi</div>
+          <ul>
+            <li data-i18n="ah-c1-l1">mõtete korrastamiseks</li>
+            <li data-i18n="ah-c1-l2">valikute kaardistamiseks</li>
+            <li data-i18n="ah-c1-l3">argumentide testimiseks</li>
+            <li data-i18n="ah-c1-l4">mustrite märkamiseks</li>
+          </ul>
+        </div>
+        <div class="ah-card ah-card-accent">
+          <div class="ah-card-tag" data-i18n="ah-c2-tag">— Inimene on vajalik, kui mängus on</div>
+          <ul>
+            <li data-i18n="ah-c2-l1">vastutus</li>
+            <li data-i18n="ah-c2-l2">usaldus</li>
+            <li data-i18n="ah-c2-l3">vaikivad pinged</li>
+            <li data-i18n="ah-c2-l4">keerulised vestlused</li>
+            <li data-i18n="ah-c2-l5">otsuse päris tagajärjed</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
 <!-- ========== SERVICES ========== -->
 <section id="services" class="services">
   <div class="wrap">
     <div class="sect-head">
-      <div class="sect-index">05</div>
+      <div class="sect-index">06</div>
       <div class="sect-eyebrow"><div class="mono" data-i18n="s4-eye">Koostöö</div></div>
       <h2 class="sect-title" data-i18n-html="s4-title"><em>Koostöö</em> vormid.</h2>
     </div>
@@ -1208,7 +1285,7 @@
 <section id="bring" class="bring">
   <div class="wrap">
     <div class="sect-head">
-      <div class="sect-index">06</div>
+      <div class="sect-index">07</div>
       <div class="sect-eyebrow"><div class="mono" data-i18n="sb-eye">Ruumis</div></div>
       <h2 class="sect-title" data-i18n-html="sb-title">Mida juhid <em>tegelikult</em><br>ruumi toovad.</h2>
     </div>
@@ -1235,7 +1312,7 @@
   </div>
   <div class="wrap">
     <div class="sect-head">
-      <div class="sect-index">07</div>
+      <div class="sect-index">08</div>
       <div class="sect-eyebrow"><div class="mono" data-i18n="s6-eye">Protsess</div></div>
       <h2 class="sect-title" data-i18n-html="s6-title">Lihtne <em>rütm</em>.<br>Neli sammu.</h2>
     </div>
@@ -1268,7 +1345,7 @@
 <section id="evoluna" class="evoluna-section">
   <div class="wrap">
     <div class="sect-head">
-      <div class="sect-index">08</div>
+      <div class="sect-index">09</div>
       <div class="sect-eyebrow"><div class="mono" data-i18n="se-eye">Evoluna</div></div>
       <h2 class="sect-title" data-i18n-html="se-title">Evoluna: <em>miks</em> broneerimine käib seal.</h2>
     </div>
@@ -1315,7 +1392,7 @@
 <section id="thinking" class="thinking">
   <div class="wrap">
     <div class="sect-head">
-      <div class="sect-index">09</div>
+      <div class="sect-index">10</div>
       <div class="sect-eyebrow"><div class="mono" data-i18n="st-eye">Mõtted</div></div>
       <h2 class="sect-title" data-i18n-html="st-title">Kus ma <em>kirjutan.</em></h2>
     </div>
@@ -1341,7 +1418,7 @@
 <section id="faq" class="faq">
   <div class="wrap">
     <div class="sect-head">
-      <div class="sect-index">10</div>
+      <div class="sect-index">11</div>
       <div class="sect-eyebrow"><div class="mono">FAQ</div></div>
       <h2 class="sect-title" data-i18n-html="s7-title">Mõistlikud <em>küsimused</em>,<br>ausad vastused.</h2>
     </div>
@@ -1363,27 +1440,31 @@
         <div class="qans" data-i18n="faqAI-a">Jah, kui see on sinu olukorras päriselt oluline. Olen AI-ga aktiivselt töötanud alates 2022. aasta lõpust. Minu jaoks ei ole AI ainult tööriistade nimekiri, vaid muutus selles, kuidas juhid otsustavad, värbavad, suhtlevad, struktureerivad tööd ja ehitavad tulevikukindlaid organisatsioone.</div>
       </details>
       <details class="q">
-        <summary><span class="qnum">05</span><span class="qtxt" data-i18n="faq3-q">Kui pikalt inimesed tavaliselt sinuga töötavad?</span><span class="qicon" aria-hidden="true"></span></summary>
+        <summary><span class="qnum">05</span><span class="qtxt" data-i18n="faqAIvsH-q">Miks mitte lihtsalt AI-ga rääkida?</span><span class="qicon" aria-hidden="true"></span></summary>
+        <div class="qans" data-i18n="faqAIvsH-a">AI on väga hea tööriist mõtete korrastamiseks ja uute vaatenurkade leidmiseks. Kasutan seda ka ise. Aga AI ei kanna sinu otsuse tagajärgi. Ta ei tunne sinu organisatsiooni vaikseid pingeid, omanike ootusi, tiimi dünaamikat ega seda, mida sa jätad ütlemata. Ta võib anda head nõu, aga ta ei hoia ruumi, ei peegelda sinu vältimist ega aita vastutust päriselt kanda. Minu töö ei ole AI-d asendada. Minu töö on aidata sul jõuda selleni, mida AI sinu eest teha ei saa: otsustada, vastutada, rääkida ausalt ja muuta selgus käitumiseks.</div>
+      </details>
+      <details class="q">
+        <summary><span class="qnum">06</span><span class="qtxt" data-i18n="faq3-q">Kui pikalt inimesed tavaliselt sinuga töötavad?</span><span class="qicon" aria-hidden="true"></span></summary>
         <div class="qans" data-i18n="faq3-a">Mõnikord piisab ühest kohtumisest, kui küsimus on konkreetne. Sagedamini tekib töö rütm, näiteks kord kuus või iga kahe nädala järel. Ma ei usu kunstlikku sõltuvusse. Kui selgus on olemas ja liikumine toimib, peab töö seda toetama, mitte inimesi kinni hoidma.</div>
       </details>
       <details class="q">
-        <summary><span class="qnum">06</span><span class="qtxt" data-i18n="faq4-q">Kuidas broneerimine ja makse käivad?</span><span class="qicon" aria-hidden="true"></span></summary>
+        <summary><span class="qnum">07</span><span class="qtxt" data-i18n="faq4-q">Kuidas broneerimine ja makse käivad?</span><span class="qicon" aria-hidden="true"></span></summary>
         <div class="qans" data-i18n="faq4-a">Broneerimine ja makse käivad Evoluna kaudu. Seal näed vabu aegu, formaate, hinda ja tühistamistingimusi. See hoiab administratiivse poole selge ja laseb kohtumisel keskenduda sisule.</div>
       </details>
       <details class="q">
-        <summary><span class="qnum">07</span><span class="qtxt" data-i18n="faq5-q">Mis metoodikat kasutad?</span><span class="qicon" aria-hidden="true"></span></summary>
+        <summary><span class="qnum">08</span><span class="qtxt" data-i18n="faq5-q">Mis metoodikat kasutad?</span><span class="qicon" aria-hidden="true"></span></summary>
         <div class="qans" data-i18n="faq5-a">Kasutan GROW mudelit, kovisiooni, süsteemset mõtlemist, otsuste raamimist ja praktilist peegeldust. Aga metoodika ei ole eesmärk omaette. Oluline on, et inimene lahkuks kohtumiselt selgema pildi, parema otsuse ja konkreetse järgmise sammuga.</div>
       </details>
       <details class="q">
-        <summary><span class="qnum">08</span><span class="qtxt" data-i18n="faq6-q">Millistes keeltes ja vormides töötad?</span><span class="qicon" aria-hidden="true"></span></summary>
+        <summary><span class="qnum">09</span><span class="qtxt" data-i18n="faq6-q">Millistes keeltes ja vormides töötad?</span><span class="qicon" aria-hidden="true"></span></summary>
         <div class="qans" data-i18n="faq6-a">Töötan eesti, inglise ja vene keeles. Kohtumised toimuvad online'is või Tallinnas kohapeal, sõltuvalt formaadist ja kokkuleppest.</div>
       </details>
       <details class="q">
-        <summary><span class="qnum">09</span><span class="qtxt" data-i18n="faq7-q">Kas kõik on konfidentsiaalne?</span><span class="qicon" aria-hidden="true"></span></summary>
+        <summary><span class="qnum">10</span><span class="qtxt" data-i18n="faq7-q">Kas kõik on konfidentsiaalne?</span><span class="qicon" aria-hidden="true"></span></summary>
         <div class="qans" data-i18n="faq7-a">Jah. Konfidentsiaalsus on vaikimisi. Juhtide ja asutajate töö sisaldab sageli infot inimeste, raha, investorite, omanike, meeskonna ja isiklike pingete kohta. Seda ruumi ei saa teha ilma usalduseta.</div>
       </details>
       <details class="q">
-        <summary><span class="qnum">10</span><span class="qtxt" data-i18n="faq8-q">Mis siis, kui me ei sobi?</span><span class="qicon" aria-hidden="true"></span></summary>
+        <summary><span class="qnum">11</span><span class="qtxt" data-i18n="faq8-q">Mis siis, kui me ei sobi?</span><span class="qicon" aria-hidden="true"></span></summary>
         <div class="qans" data-i18n="faq8-a">Siis ütleme seda ausalt. Hea mentorlus ja strateegiline nõustamine vajavad usaldust, tempot ja sobivat mõtteviisi. Kui näen, et keegi teine aitaks sind paremini, ütlen seda.</div>
       </details>
     </div>
@@ -1619,6 +1700,29 @@
       "evo-f3-k":"Mentorite lehed","evo-f4-k":"Miks platvorm","evo-f4-v":"Usaldus ja selgus mastaabis, mitte valjem turundus",
       "evo-txt":"Evoluna asutaja · evoluna.app, AI-põhine usaldusplatvorm.",
       "evo-cta":"Vaata profiili Evolunas",
+
+      "ah-eye":"AI ja inimene",
+      "ah-title":"AI aitab <em>mõelda.</em><br>Inimene aitab <em>otsustada.</em>",
+      "ah-p1":"AI on täna üks tugevamaid tööriistu mõtete korrastamiseks. Ta aitab kiiresti näha mustreid, sõnastada valikuid, testida argumente ja avada uusi vaatenurki.",
+      "ah-p2":"Aga juhtimise tegelikkus ei koosne ainult informatsioonist. Seal on vastutus, inimesed, pinged, ajastus, usaldus, võimusuhted, hirmud, vaikimised ja otsused, mille tagajärgi tuleb ise kanda.",
+      "ah-p3":"<strong>AI võib aidata sul mõelda kiiremini. Hea mõttepartner aitab sul näha ausamalt.</strong>",
+      "ah-p4":"Minu töö algab sageli sealt, kus AI vastus tundub juba mõistlik, aga inimene teab sisimas, et tegelik küsimus on veel lahti. Mis jääb ütlemata? Millist vestlust välditakse? Mis on loogiliselt õige, aga inimlikult kandevõimetu? Kus on päris otsus?",
+      "ah-p5":"<em>AI annab võimalusi. Inimene aitab valida.</em>",
+      "ah-cta":"Broneeri vestlus",
+      "ah-cta-meta":"Broneerimine ja makse Evoluna kaudu.",
+      "ah-c1-tag":"— AI sobib hästi",
+      "ah-c1-l1":"mõtete korrastamiseks",
+      "ah-c1-l2":"valikute kaardistamiseks",
+      "ah-c1-l3":"argumentide testimiseks",
+      "ah-c1-l4":"mustrite märkamiseks",
+      "ah-c2-tag":"— Inimene on vajalik, kui mängus on",
+      "ah-c2-l1":"vastutus",
+      "ah-c2-l2":"usaldus",
+      "ah-c2-l3":"vaikivad pinged",
+      "ah-c2-l4":"keerulised vestlused",
+      "ah-c2-l5":"otsuse päris tagajärjed",
+      "faqAIvsH-q":"Miks mitte lihtsalt AI-ga rääkida?",
+      "faqAIvsH-a":"AI on väga hea tööriist mõtete korrastamiseks ja uute vaatenurkade leidmiseks. Kasutan seda ka ise. Aga AI ei kanna sinu otsuse tagajärgi. Ta ei tunne sinu organisatsiooni vaikseid pingeid, omanike ootusi, tiimi dünaamikat ega seda, mida sa jätad ütlemata. Ta võib anda head nõu, aga ta ei hoia ruumi, ei peegelda sinu vältimist ega aita vastutust päriselt kanda. Minu töö ei ole AI-d asendada. Minu töö on aidata sul jõuda selleni, mida AI sinu eest teha ei saa: otsustada, vastutada, rääkida ausalt ja muuta selgus käitumiseks.",
 
       "s7-title":"Mõistlikud <em>küsimused</em>,<br>ausad vastused.",
       "faqWho-q":"Kellele see töö sobib?",
