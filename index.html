@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- ========== PRIMARY SEO ========== -->
-<title>Pert Lomp — Strategic Advisor, Executive Mentor & AI-Era Thinking Partner | Founder of Evoluna</title>
-<meta name="description" content="Pert Lomp is a strategic advisor, executive mentor and systems thinker helping founders, CTOs, executives and organisations turn complexity into clarity, structure and better decisions in the age of AI. Founder of Evoluna. EMCC EIA Practitioner.">
+<title>Pert Lomp | Strategic Advisor, Executive Mentor & AI-Era Thinking Partner</title>
+<meta name="description" content="Pert Lomp is a strategic advisor, executive mentor and systems thinker helping founders, CTOs, executives and organisations turn complexity into clarity, structure and better decisions in the age of AI.">
 <meta name="keywords" content="strategic advisor, executive mentor, AI-era leadership, systems thinker, CTO advisor, founder mentor, technology leadership, board advisor Estonia, kovisioon, GROW model, Evoluna founder, Pert Lomp, strateegiline nõustaja, juhtimismentor, AI ajastu mentor, süsteemne mõtlemine">
 <meta name="author" content="Pert Lomp">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -41,8 +41,8 @@
 <!-- ========== OPEN GRAPH ========== -->
 <meta property="og:type" content="profile">
 <meta property="og:site_name" content="Pert Lomp — Strategic Advisor & Executive Mentor">
-<meta property="og:title" content="Pert Lomp — Strategic Advisor, Executive Mentor & AI-Era Thinking Partner">
-<meta property="og:description" content="Strategic clarity for founders, CTOs, executives and organisations navigating complexity in the age of AI. 25+ years across technology, media and strategy. Founder of Evoluna.">
+<meta property="og:title" content="Pert Lomp | Strategic Advisor, Executive Mentor & AI-Era Thinking Partner">
+<meta property="og:description" content="Strategic advisor, executive mentor and systems thinker helping founders, CTOs, executives and organisations turn complexity into clarity, structure and better decisions in the age of AI.">
 <meta property="og:url" content="https://www.pertlomp.com/">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="et_EE">
@@ -449,6 +449,9 @@
 
   /* ========== ABOUT ========== */
   .about{border-top:1px solid var(--rule)}
+  .about-sub{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-ink);margin:1.6em 0 .4em;padding-top:.4em;border-top:1px solid var(--rule);opacity:.85}
+  .about-prose .about-sub:first-child{margin-top:0;padding-top:0;border-top:0}
+  body[data-theme="dark"] .about-sub{color:var(--accent)}
   .about-body{display:grid;grid-template-columns:repeat(12,1fr);gap:40px}
   .about-prose{grid-column:1 / span 7;font-size:clamp(17px,1.35vw,20px);line-height:1.6;opacity:.92;text-wrap:pretty}
   .about-prose p+p{margin-top:1.1em}
@@ -543,8 +546,8 @@
   .svc .top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
   .svc .num{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;opacity:.5;font-weight:500}
   .svc .price-wrap{display:flex;flex-direction:column;align-items:flex-end;gap:2px;text-align:right}
-  .svc .price{font-family:var(--display);font-style:italic;font-weight:300;font-size:clamp(22px,1.8vw,26px);letter-spacing:-.02em;line-height:1}
-  .svc .duration{font-size:11px;opacity:.6;font-family:var(--mono);letter-spacing:.05em}
+  .svc .price{font-family:var(--display);font-style:italic;font-weight:300;font-size:clamp(15px,1.1vw,17px);opacity:.65;letter-spacing:-.01em;line-height:1}
+  .svc .duration{font-size:10px;opacity:.55;font-family:var(--mono);letter-spacing:.08em;text-transform:uppercase}
   .svc h4{font-family:var(--display);font-weight:300;font-size:clamp(24px,2vw,30px);letter-spacing:-.02em;line-height:1.1;margin:0}
   .svc h4 em{font-style:italic}
   .svc p{margin:0;font-size:14.5px;line-height:1.6;opacity:.85;max-width:42ch}
@@ -790,7 +793,6 @@
     </a>
     <div class="navlinks">
       <a href="#about" data-i18n="nav-about">About</a>
-      <a href="#why" data-i18n="nav-why">When to call</a>
       <a href="#expertise" data-i18n="nav-expertise">Focus</a>
       <a href="#approach" data-i18n="nav-approach">Approach</a>
       <a href="#evoluna" data-i18n="nav-evoluna">Evoluna</a>
@@ -873,7 +875,7 @@
         </p>
         <div class="hero-cta-row">
           <a class="btn-primary" href="https://evoluna.app/specialists/pertlomp" target="_blank" rel="noopener">
-            <span data-i18n="hero-cta">Book on Evoluna</span>
+            <span data-i18n="hero-cta">Book a strategic conversation</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
           <a class="btn-ghost" href="#why" data-i18n="hero-cta-alt">When to call →</a>
@@ -883,7 +885,7 @@
       <div class="hero-right">
         <figure class="portrait-wrap">
           <img src="assets/pert-portrait.jpg" alt="Pert Lomp — strategic mentor and systems architect, Tallinn, Estonia" width="800" height="1000" loading="eager" fetchpriority="high" decoding="async" />
-          <div class="portrait-badge" data-i18n="portrait-badge">Certified Mentor</div>
+          <div class="portrait-badge" data-i18n="portrait-badge">Strategic Advisor</div>
           <figcaption class="portrait-tag">
             <div>
               <div class="name">Pert Lomp</div>
@@ -973,10 +975,13 @@
     </div>
     <div class="about-body">
       <div class="about-prose">
-        <p class="drop" data-i18n="about-p1">I have been around technology since 1994 — built and reworked my first machine at twelve. From there I spent more than 25 years across technology, media, business development, leadership and strategic consulting. Products, teams, boardrooms, negotiations, real growth and real mistakes.</p>
-        <p data-i18n="about-p2">Since late 2022 I have been working actively with AI in real operating contexts — not as a topic, as a tool. That work is now woven into how I advise leaders: where AI changes decisions, structures, hiring, ethics and pace, and where it does not.</p>
+        <h3 class="about-sub" data-i18n="about-h1">Technology and operating reality</h3>
+        <p class="drop" data-i18n="about-p1">I have been around technology since 1994 and built my first machine at twelve. From there, more than 25 years across technology, media, business development, leadership and strategic consulting. Products, teams, boardrooms, negotiations, real growth and real mistakes.</p>
+        <h3 class="about-sub" data-i18n="about-h2">AI and leadership</h3>
+        <p data-i18n="about-p2">Since late 2022 I have been working actively with AI in real operating contexts, not as a topic but as a tool. That work is now woven into how I advise leaders: where AI changes decisions, structures, hiring, ethics and pace, and where it does not.</p>
+        <h3 class="about-sub" data-i18n="about-h3">Evoluna and human development</h3>
         <p data-i18n="about-p3">Today I work as a strategic advisor, executive mentor and systems thinker for founders, CTOs, executives and organisations. I am also the founder of Evoluna, an AI-powered platform that helps people find the right mentor, coach or therapist. The two tracks feed each other: the work I do with leaders sharpens the platform, and the platform makes serious thinking partners easier to find.</p>
-        <p data-i18n="about-p4">My role is not to add information. It is to bring structure to what is already there — the decision, the trade-off, the quiet thing you have been avoiding — and turn it into clear forward movement. Direct. Confidential. Logic and the human, side by side.</p>
+        <p data-i18n="about-p4">My role is not to add information. It is to bring structure to what is already there, the decision, the trade-off, the quiet thing you have been avoiding, and turn it into clear forward movement. Direct. Confidential. Logic and the human, side by side.</p>
       </div>
       <aside class="about-facts">
         <div class="fact"><span class="k" data-i18n="fact-k1">Based in</span><span class="v">Tallinn · EE</span></div>
@@ -1043,7 +1048,7 @@
         <p data-i18n="f4-p">No company outgrows its founder. The way you spend Tuesday afternoon, the calendar you defend, the things you finally stop avoiding — these decide what the rest of the work is even capable of becoming.</p>
         <ul class="focus-list">
           <li data-i18n="f4-l1">Decision logs, review cadence, calendar hygiene</li>
-          <li data-i18n="f4-l2">Energy, recovery, body–mind balance for senior leaders</li>
+          <li data-i18n="f4-l2">Energy, recovery and decision capacity for senior leaders</li>
           <li data-i18n="f4-l3">Honest patterns: what you keep avoiding and why</li>
           <li data-i18n="f4-l4">From operator to orchestrator</li>
         </ul>
@@ -1088,7 +1093,7 @@
       <article class="pillar">
         <div class="num">03</div>
         <h3 data-i18n-html="p3-title">Clarity has to become<br><em>behaviour</em>.</h3>
-        <p data-i18n="p3-body">A session that ends with insight and no movement is a story, not work. We finish with three concrete things you do this week, the one conversation you stop postponing, and the metric that tells you whether the new direction is real. Then we come back and check.</p>
+        <p data-i18n="p3-body">A session that ends with insight and no movement is a story, not work. We finish with three concrete things you do this week, the one conversation you stop postponing, the metric that tells you whether the new direction is real, and a clear picture of what to remove because it no longer deserves energy. Then we come back and check.</p>
         <div class="tag" data-i18n="p3-tag">— EXECUTION</div>
       </article>
     </div>
@@ -1131,7 +1136,7 @@
         </div>
         <h4 data-i18n-html="svc1-title">Extended <em>strategy</em> session</h4>
         <p data-i18n="svc1-body">Two hours for the problems that do not unfold in sixty minutes — organisation-level decisions, co-founder tension, pivot-or-commit moments, AI-era restructuring questions. Written summary and three concrete next steps.</p>
-        <a class="svc-cta" href="https://evoluna.app/specialists/pertlomp" target="_blank" rel="noopener" data-i18n="svc1-cta">Book on Evoluna →</a>
+        <a class="svc-cta" href="https://evoluna.app/specialists/pertlomp" target="_blank" rel="noopener" data-i18n="svc1-cta">Book this conversation →</a>
       </article>
 
       <article class="svc">
@@ -1143,7 +1148,7 @@
         </div>
         <h4 data-i18n-html="svc2-title">Executive <em>mentoring</em> rhythm</h4>
         <p data-i18n="svc2-body">The cadence most executives settle into. Biweekly or monthly. Enough room to go beneath the surface question, not so long it runs on inertia. Strategic clarity and personal operating system, in one continuous frame.</p>
-        <a class="svc-cta" href="https://evoluna.app/specialists/pertlomp" target="_blank" rel="noopener" data-i18n="svc2-cta">Book on Evoluna →</a>
+        <a class="svc-cta" href="https://evoluna.app/specialists/pertlomp" target="_blank" rel="noopener" data-i18n="svc2-cta">Book this conversation →</a>
       </article>
 
       <article class="svc">
@@ -1155,7 +1160,7 @@
         </div>
         <h4 data-i18n-html="svc3-title">Career &amp; <em>transition</em> advisory</h4>
         <p data-i18n="svc3-body">For senior professionals at inflection points. New role, new company, new version of yourself. We build an honest map of where you stand, where you are heading, and the first real move you can make this week.</p>
-        <a class="svc-cta" href="https://evoluna.app/specialists/pertlomp" target="_blank" rel="noopener" data-i18n="svc3-cta">Book on Evoluna →</a>
+        <a class="svc-cta" href="https://evoluna.app/specialists/pertlomp" target="_blank" rel="noopener" data-i18n="svc3-cta">Book this conversation →</a>
       </article>
 
       <article class="svc">
@@ -1167,7 +1172,7 @@
         </div>
         <h4 data-i18n-html="svc4-title"><em>Negotiation</em> &amp; hard conversations</h4>
         <p data-i18n="svc4-body">Preparation and live role-play for high-stakes talks: investors, boards, partners, co-founders, senior departures. You walk in rehearsed, not improvising. We work through the move, the counter-move and the line you will not cross.</p>
-        <a class="svc-cta" href="https://evoluna.app/specialists/pertlomp" target="_blank" rel="noopener" data-i18n="svc4-cta">Book on Evoluna →</a>
+        <a class="svc-cta" href="https://evoluna.app/specialists/pertlomp" target="_blank" rel="noopener" data-i18n="svc4-cta">Book this conversation →</a>
       </article>
 
       <article class="svc">
@@ -1179,7 +1184,7 @@
         </div>
         <h4 data-i18n-html="svc5-title"><em>Co-vision</em> · leadership group format</h4>
         <p data-i18n="svc5-body">Structured peer mentoring for two or more leaders, facilitated by me. A confidential room where senior people think out loud about live questions. Deep, mutual, surprisingly fast — and impossible to replicate alone.</p>
-        <a class="svc-cta" href="https://evoluna.app/specialists/pertlomp" target="_blank" rel="noopener" data-i18n="svc5-cta">Book on Evoluna →</a>
+        <a class="svc-cta" href="https://evoluna.app/specialists/pertlomp" target="_blank" rel="noopener" data-i18n="svc5-cta">Book this conversation →</a>
       </article>
     </div>
 
@@ -1355,7 +1360,7 @@
       </details>
       <details class="q">
         <summary><span class="qnum">05</span><span class="qtxt" data-i18n="faq4-q">How does booking and payment work?</span><span class="qicon" aria-hidden="true"></span></summary>
-        <div class="qans" data-i18n="faq4-a">All sessions are booked and paid through Evoluna.app — the platform I am building. You see the live calendar, pick a slot, pay by card. Cancellation up to 24 hours before the session. No invoicing back-and-forth, no credit-card chasing.</div>
+        <div class="qans" data-i18n="faq4-a">All sessions are booked and paid through Evoluna.app, the platform I am building. You see the live calendar, pick a slot, pay by card. Cancellation up to 24 hours before the session. Clear booking, payment and cancellation in one place, with no unnecessary administrative back-and-forth.</div>
       </details>
       <details class="q">
         <summary><span class="qnum">06</span><span class="qtxt" data-i18n="faq5-q">What methodology do you use?</span><span class="qicon" aria-hidden="true"></span></summary>
@@ -1458,21 +1463,26 @@
 
 <script>
   const I18N = {
-    en:{},
+    en:{
+      "meta-title":"Pert Lomp | Strategic Advisor, Executive Mentor & AI-Era Thinking Partner",
+      "meta-description":"Pert Lomp is a strategic advisor, executive mentor and systems thinker helping founders, CTOs, executives and organisations turn complexity into clarity, structure and better decisions in the age of AI."
+    },
     et:{
+      "meta-title":"Pert Lomp | Strateegiline nõustaja, juhtide mentor ja AI-ajastu mõttepartner",
+      "meta-description":"Pert Lomp on strateegiline nõustaja, juhtide mentor ja süsteemne mõtleja, kes aitab asutajatel, CTO-del, juhtidel ja organisatsioonidel liikuda keerukusest selguse, struktuuri ja paremate otsusteni AI-ajastul.",
       "nav-tag":"Strateegiline nõustaja · Juhtide mentor",
       "nav-about":"Minust","nav-why":"Millal pöörduda","nav-expertise":"Fookus","nav-approach":"Metoodika","nav-services":"Koostöö","nav-evoluna":"Evoluna","nav-process":"Protsess","nav-contact":"Kontakt",
-      "nav-cta":"Broneeri Evolunas",
+      "nav-cta":"Broneeri strateegiline vestlus",
 
       "hero-loc":"TALLINN · EESTI · KAUGTÖÖ KOGU MAAILMAS",
       "hero-status":"VÕTAN VASTU UUSI KOOSTÖÖSID · 2026",
       "hero-eyebrow":"STRATEEGILINE NÕUSTAJA · MENTOR · EVOLUNA ASUTAJA",
       "hero-title":"<em>Kaosest</em><br>selguse,<br><span class=\"sans\">struktuuri</span> ja <em>otsusteni.</em>",
       "hero-lede":"<strong>Strateegiline mõttepartner</strong> asutajatele, CTO-dele, juhtidele ja organisatsioonidele, kes liiguvad läbi keerukuse AI-ajastul. 25+ aastat tehnoloogias, meedias, äriarenduses ja strateegias, ühendatud praktilise mentorluse ja süsteemse mõtlemisega. Töö on mõelda selgemalt, otsustada paremini ja muuta keerukus struktureeritud edasiliikumiseks.",
-      "hero-cta":"Broneeri Evolunas","hero-cta-alt":"Millal pöörduda →",
+      "hero-cta":"Broneeri strateegiline vestlus","hero-cta-alt":"Millal minu poole pöörduda →",
       "hero-proof":"Broneerimine ja makse läbi Evoluna · konfidentsiaalne · online või Tallinnas",
 
-      "portrait-badge":"Sertifitseeritud Mentor",
+      "portrait-badge":"Strateegiline nõustaja",
       "creds-eye":"TAUST",
       "cred-1":"Aastat tehnoloogias, meedias, äriarenduses ja strateegias",
       "cred-2":"Aktiivselt AI-ga töötamas päris ärikonteksis",
@@ -1494,7 +1504,10 @@
 
       "s1-eye":"Minust",
       "s1-title":"Järgmine samm ei vaja<br>enam <em>infot.</em><br>Ta vajab <em>selgust.</em>",
-      "about-p1":"Tehnoloogias olen olnud 1994. aastast. Ehitasin oma esimese arvuti kaheteistkümneaastaselt. Sealt edasi 25+ aastat tehnoloogias, meedias, äriarenduses, juhtimises ja strateegilises nõustamises. Tooted, meeskonnad, juhatuse lauad, läbirääkimised, päris kasv ja päris vead.",
+      "about-h1":"Tehnoloogia ja operatiivne reaalsus",
+      "about-h2":"AI ja juhtimine",
+      "about-h3":"Evoluna ja inimese areng",
+      "about-p1":"Tehnoloogias olen olnud 1994. aastast ja ehitasin oma esimese arvuti kaheteistkümneaastaselt. Sealt edasi 25+ aastat tehnoloogias, meedias, äriarenduses, juhtimises ja strateegilises nõustamises. Tooted, meeskonnad, juhatuse lauad, läbirääkimised, päris kasv ja päris vead.",
       "about-p2":"Alates 2022. aasta lõpust töötan aktiivselt AI-ga päris ärikontekstis, mitte teemana, vaid tööriistana. See töö on nüüd sees ka selles, kuidas ma juhte nõustan. Kus AI muudab otsuseid, struktuure, värbamist, eetikat ja tempot, ja kus ei muuda.",
       "about-p3":"Täna töötan strateegilise nõustaja, mentorja ja süsteemse mõtlemise õpetajana asutajatele, CTO-dele, juhtidele ja organisatsioonidele. Olen ka Evoluna asutaja, AI-põhine platvorm, mis aitab inimestel leida õiget mentorit, coach'i või terapeuti. Need kaks rada toidavad teineteist. Töö juhtidega lihvib platvormi, ja platvorm muudab tõsiste mõttepartnerite leidmise lihtsamaks.",
       "about-p4":"Minu roll ei ole infot juurde anda. See on tuua struktuur sellesse, mis on juba olemas. Otsus, kompromiss, vaikne asi, mida oled vältinud. Ja muuta see selgeks edasiliikumiseks. Otse. Konfidentsiaalselt. Loogika ja inimlikkus, kõrvuti.",
@@ -1510,7 +1523,7 @@
       "f3-tag":"— JUHTIMINE JA SUHTED","f3-h":"Juhtimine, suhted ja rasked vestlused","f3-p":"Vestlused, mida juhid edasi lükkavad, on tavaliselt need, mis kõige rohkem loevad. Kaasasutajate pinge. Kõrgele värvatud inimene, kes ei istu rolli. Juhatus, mida tuleb pöörata. Valmistame need ette, peame ära ja koristame järel.",
       "f3-l1":"Rasked vestlused: ette valmistatud, läbi mängitud, ära peetud","f3-l2":"Kaasasutajate, juhatuse ja meeskonna dünaamika","f3-l3":"Juhi tasandi tagasiside, esinemine ja lahkumised","f3-l4":"Konfliktide juhtimine ilma teatraalsuseta",
       "f4-tag":"— ISIKLIK TOIMIMISSÜSTEEM","f4-h":"Isiklik toimimissüsteem ja kasv","f4-p":"Ükski ettevõte ei kasva oma asutajast üle. Kuidas veedad teisipäeva pärastlõuna, millist kalendrit kaitsed, mida lõpuks ütlema lõpetad. Need otsustavad, milliseks ülejäänud töö üldse võimeline on saama.",
-      "f4-l1":"Otsuste päevik, ülevaatuste rütm, kalendrihügieen","f4-l2":"Energia, taastumine, keha-vaim tasakaal kõrgemal tasandil","f4-l3":"Ausad mustrid: mida sa pidevalt väldid ja miks","f4-l4":"Operaatorist orkestreerijaks",
+      "f4-l1":"Otsuste päevik, ülevaatuste rütm, kalendrihügieen","f4-l2":"Energia, taastumine ja otsustusvõime kõrgematel juhtidel","f4-l3":"Ausad mustrid: mida sa pidevalt väldid ja miks","f4-l4":"Operaatorist orkestreerijaks",
 
       "s3-eye":"Metoodika",
       "s3-title":"Neli <em>töötavat</em> uskumust.",
@@ -1524,7 +1537,7 @@
       "p2-body":"Hea strateegiline otsus elab tabelarvutuses, kalendris, meeskonna ruumis ja vaikse pühapäevaõhtu peas. Kui plaan on paberil õige, aga ükski selle ümber olev inimene ei suuda seda kanda, siis ei ole see õige plaan. Loogika ja inimlikkus, kõrvuti.",
       "p2-tag":"— SÜNTEES",
       "p3-title":"Selgus peab muutuma<br><em>käitumiseks</em>.",
-      "p3-body":"Seanss, mis lõpeb ainult arusaamisega ja ilma liikumiseta, on lugu, mitte töö. Lõpetame kolme konkreetse asjaga, mille teed sel nädalal. Ühe vestlusega, mille edasilükkamise lõpetad. Ühe näitajaga, mis ütleb, kas uus suund on päris. Siis tuleme tagasi ja vaatame.",
+      "p3-body":"Seanss, mis lõpeb ainult arusaamisega ja ilma liikumiseta, on lugu, mitte töö. Lõpetame kolme konkreetse asjaga, mille teed sel nädalal. Ühe vestlusega, mille edasilükkamise lõpetad. Ühe näitajaga, mis ütleb, kas uus suund on päris. Ja selge pildiga, mida eemaldada, sest see ei vääri enam energiat. Siis tuleme tagasi ja vaatame.",
       "p3-tag":"— TEOSTUS",
 
       "s4-eye":"Koostöö vormid",
@@ -1539,27 +1552,27 @@
       "svc1-meta":"120 MIN · €300",
       "svc1-title":"Laiendatud <em>strateegia</em>seanss",
       "svc1-body":"Kaks tundi probleemidele, mis ei lahene kuuekümne minutiga. Organisatsiooni tasandi otsused, kaasasutajate pinge, „pööra või jätka“ hetked, AI-ajastu ümberkorralduste küsimused. Kirjalik kokkuvõte ja kolm konkreetset järgmist sammu.",
-      "svc1-cta":"Broneeri Evolunas →",
+      "svc1-cta":"Broneeri see vestlus →",
       "svc2-num":"03 — JUHI RÜTM",
       "svc2-meta":"90 MIN · €250",
       "svc2-title":"Juhi <em>mentorluse</em> rütm",
       "svc2-body":"Rütm, millesse enamik juhtidest jääb. Kahenädalane või kuine. Piisavalt ruumi pinna alla minna, mitte nii pikk, et läheb inertsi peale. Strateegiline selgus ja isiklik toimimissüsteem, ühes pidevas raamis.",
-      "svc2-cta":"Broneeri Evolunas →",
+      "svc2-cta":"Broneeri see vestlus →",
       "svc3-num":"04 — KARJÄÄR JA ÜLEMINEK",
       "svc3-meta":"60 MIN · €150",
       "svc3-title":"Karjääri ja <em>ülemineku</em> nõustamine",
       "svc3-body":"Kõrgema tasandi spetsialistidele pöördepunktides. Uus roll, uus ettevõte, uus versioon iseendast. Teeme ausa kaardi sellest, kus oled, kuhu suundud, ja esimese päris sammu, mille saad sel nädalal teha.",
-      "svc3-cta":"Broneeri Evolunas →",
+      "svc3-cta":"Broneeri see vestlus →",
       "svc4-num":"05 — LÄBIRÄÄKIMISED",
       "svc4-meta":"60 MIN · €150",
       "svc4-title":"<em>Läbirääkimised</em> ja rasked vestlused",
       "svc4-body":"Ettevalmistus ja rollimäng suure panusega vestlusteks: investorid, nõukogu, partnerid, kaasasutajad, kõrgemate inimeste lahkumised. Astud ruumi proovituna, mitte improviseerides. Töötame läbi käigu, vastukäigu ja joone, mida sa ei ületa.",
-      "svc4-cta":"Broneeri Evolunas →",
+      "svc4-cta":"Broneeri see vestlus →",
       "svc5-num":"06 — JUHTIDE GRUPP",
       "svc5-meta":"60 MIN · €150",
       "svc5-title":"<em>Kovisioon</em> · juhtide grupi formaat",
       "svc5-body":"Struktureeritud vastastikune mentorlus kahele või enamale juhile, mille fasiliteerin mina. Konfidentsiaalne ruum, kus kõrgema tasandi inimesed mõtlevad valju häälega elavate küsimuste ümber. Sügav, vastastikune, üllatavalt kiire. Üksinda ei korda.",
-      "svc5-cta":"Broneeri Evolunas →",
+      "svc5-cta":"Broneeri see vestlus →",
       "svc-footnote":"Kõik broneeringud ja maksed Evoluna kaudu · kinnitatud mentori profiil · tühistamine kuni 24h enne kohtumist · mitme seansi kokkulepped ja meeskonnatööd eraldi.",
 
       "sb-eye":"Toas",
@@ -1600,7 +1613,7 @@
       "faq2-q":"Juhin tehnoloogiaettevõtet. Kas sa mõistad mu maailma?","faq2-a":"Jah. Olen tehnoloogiaga seotud 1994. aastast ja töötanud juhi tasandil tehnoloogias, meedias, äriarenduses ja strateegias rohkem kui 25 aastat. Ehitanud tooteid, juhtinud meeskondi, istunud investorite laua mõlemal pool. Ma ei ürita su CTO-d üle-insenerida. Küsin küsimused, mida su insenerid ei saa küsida, ja hoian raami hetkel, kui ettevõtte enda operatsioonisüsteem saab kitsaskohaks.",
       "faqAI-q":"Kuidas sa AI-le selles töös mõtled?","faqAI-a":"Olen AI-ga aktiivselt töötanud alates 2022. aasta lõpust, päris ärikontekstis, mitte teemana, vaid tööriistana. Huvitavad küsimused juhi tasandil ei ole, millist mudelit kutsuda. Need on, kuidas AI muudab otsuseid, värbamist, struktuuri, eetikat ja tempot, ja kus ettevõtte enda operatsioonisüsteem tuleb selle ümber ümber kujundada. See vestlus on töö sisse põimitud.",
       "faq3-q":"Kui pikalt inimesed tavaliselt sinuga töötavad?","faq3-a":"Enamik juhtide koostöid kestab kolm kuni kuus kuud, kahenädalase või kuise rütmiga. Mõni jääb kvartaalselt pikemaks ajaks kõlakojaks. Miinimumi pole. Kui üks vestlus on see, mida vaja, on see puhas tulemus.",
-      "faq4-q":"Kuidas broneerimine ja makse käivad?","faq4-a":"Kõik seansid broneeritakse ja makstakse Evoluna.app kaudu, platvormil, mida mina ehitan. Näed elavat kalendrit, valid aja, maksad kaardiga. Tühistamine kuni 24 tundi enne kohtumist. Mitte mingit arveldamise edasi-tagasi liikumist ega kaardinumbrite ajamist.",
+      "faq4-q":"Kuidas broneerimine ja makse käivad?","faq4-a":"Kõik seansid broneeritakse ja makstakse Evoluna.app kaudu, platvormil, mida mina ehitan. Näed elavat kalendrit, valid aja, maksad kaardiga. Tühistamine kuni 24 tundi enne kohtumist. Selge broneerimine, makse ja tühistamine, kõik ühes kohas, ilma haldusliku edasi-tagasi liikumiseta.",
       "faq5-q":"Mis metoodikat kasutad?","faq5-a":"Põhialusena GROW mudel (Goal · Reality · Options · Will), Eisenhoweri raamistik prioritiseerimiseks, kui aega napib, ja kovisioon (struktureeritud koos-mentorlus) grupiformaatides. Tõestatud, laialdaselt kasutatud raamistikud. Aga tööriist valitakse alati inimese ja küsimuse järgi, mitte vastupidi.",
       "faq6-q":"Millistes keeltes ja vormides?","faq6-a":"Eesti, inglise ja vene keeles. Online või kohapeal Tallinnas, või kombinatsioon. E–R 10:00–21:00 EET. Nädalavahetused kokkuleppel.",
       "faq7-q":"Kas kõik on konfidentsiaalne?","faq7-a":"Jah. Midagi ei lahku ruumist. Xpert Media OÜ töötab GDPR-i raames ja konfidentsiaalsus on iga koostöö vaikimisi. Mitte mingeid juhtumiuuringuid, mitte nimepidi anekdoote, mitte LinkedIn postitusi. NDA-d kättesaadavad nõudmisel, kui kontekst seda nõuab.",
@@ -1662,10 +1675,14 @@
     try { localStorage.setItem(PREFS_KEY, JSON.stringify(p)); } catch(e){}
   }
   const stored = loadPrefs();
+  const urlParams = new URLSearchParams(window.location.search);
+  const langFromUrl = urlParams.get("lang");
   const browserPrefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
   const state = {
     theme: stored.theme || (browserPrefersDark ? "dark" : "light"),
-    lang: stored.lang || (navigator.language && navigator.language.toLowerCase().startsWith("et") ? "et" : "en")
+    lang: (langFromUrl === "et" || langFromUrl === "en")
+      ? langFromUrl
+      : (stored.lang || (navigator.language && navigator.language.toLowerCase().startsWith("et") ? "et" : "en"))
   };
 
   function setTheme(v){
@@ -1688,6 +1705,20 @@
     });
     applyI18n();
     savePrefs(state);
+    // Update URL so each language has a stable shareable URL for SEO
+    try {
+      const url = new URL(window.location);
+      if (v === "et") url.searchParams.set("lang","et");
+      else url.searchParams.delete("lang");
+      window.history.replaceState({}, "", url);
+    } catch(e){}
+    // Update document language attribute
+    document.documentElement.lang = v;
+    // Switch meta description for crawlers reading initial-render
+    const md = document.querySelector('meta[name="description"]');
+    if (md && I18N[v] && I18N[v]["meta-description"]) md.setAttribute("content", I18N[v]["meta-description"]);
+    const tt = document.querySelector('title');
+    if (tt && I18N[v] && I18N[v]["meta-title"]) tt.textContent = I18N[v]["meta-title"];
   }
 
   // Mobile menu
