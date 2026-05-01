@@ -7,71 +7,26 @@
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.pertlomp.com/"/>
-    <xhtml:link rel="alternate" hreflang="et" href="https://www.pertlomp.com/?lang=et"/>
+    <xhtml:link rel="alternate" hreflang="et" href="https://www.pertlomp.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pertlomp.com/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pertlomp.com/"/>
     <image:image>
       <image:loc>https://www.pertlomp.com/assets/pert-portrait.jpg</image:loc>
-      <image:title>Pert Lomp — Strategic Advisor &amp; Executive Mentor</image:title>
-      <image:caption>Strategic advisor, executive mentor and founder of Evoluna in Tallinn, Estonia.</image:caption>
+      <image:title>Pert Lomp — Strateegiline nõustaja ja juhtide mentor</image:title>
+      <image:caption>Strateegiline nõustaja, juhtide mentor ja Evoluna asutaja Tallinnas.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.pertlomp.com/assets/pert-lomp-og.png</image:loc>
-      <image:title>Pert Lomp — Strategic Advisor &amp; AI-Era Thinking Partner</image:title>
+      <image:title>Pert Lomp — Strategic Advisor &amp; Executive Mentor</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://www.pertlomp.com/#about</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.pertlomp.com/#why</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.pertlomp.com/#expertise</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.pertlomp.com/#approach</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.pertlomp.com/#services</loc>
+    <loc>https://www.pertlomp.com/en/</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.pertlomp.com/#evoluna</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.pertlomp.com/#thinking</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.pertlomp.com/#faq</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.pertlomp.com/#contact</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pertlomp.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="et" href="https://www.pertlomp.com/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pertlomp.com/"/>
   </url>
 </urlset>
