@@ -52,5 +52,5 @@ Disallow: /
 User-agent: DotBot
 Disallow: /
 
-Sitemap: https://pertlomp.com/sitemap.xml
-Host: https://pertlomp.com
+Sitemap: https://www.pertlomp.com/sitemap.xml
+Host: https://www.pertlomp.com
