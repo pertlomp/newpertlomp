@@ -23,13 +23,26 @@
 <!-- ========== GOOGLE SITE VERIFICATION (also via /googlebb07411a2f5cd6a9.html) ========== -->
 <meta name="google-site-verification" content="googlebb07411a2f5cd6a9">
 
-<!-- ========== GOOGLE ANALYTICS (G-QKM9DV5ZCW) ========== -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QKM9DV5ZCW"></script>
+<!-- ========== GOOGLE ANALYTICS (G-QKM9DV5ZCW) — deferred to idle ========== -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-QKM9DV5ZCW', { anonymize_ip: true });
+  // Defer gtag.js script load until browser is idle so it never blocks LCP
+  function __loadGtag(){
+    if (window.__gtagLoaded) return;
+    window.__gtagLoaded = true;
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-QKM9DV5ZCW';
+    document.head.appendChild(s);
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(__loadGtag, { timeout: 4000 });
+  } else {
+    window.addEventListener('load', function(){ setTimeout(__loadGtag, 2000); });
+  }
 </script>
 
 <!-- Canonical & alternates -->
@@ -71,10 +84,12 @@
 <link rel="apple-touch-icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230D1C93'/><text x='50' y='68' font-family='Georgia,serif' font-size='62' fill='white' text-anchor='middle' font-weight='400'>PL</text></svg>">
 
 <!-- ========== FONTS (performance-tuned) ========== -->
+<!-- Preload hero LCP image (AVIF) for fastest paint -->
+<link rel="preload" as="image" type="image/avif" href="/assets/pert-portrait-800.avif" imagesrcset="/assets/pert-portrait-480.avif 480w, /assets/pert-portrait-800.avif 800w, /assets/pert-portrait-1200.avif 1200w" imagesizes="(max-width: 640px) 85vw, (max-width: 1024px) 45vw, 413px" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="dns-prefetch" href="https://evoluna.app">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 
 <!-- ========== STRUCTURED DATA (JSON-LD) ========== -->
 <script type="application/ld+json">
@@ -925,7 +940,11 @@
       </div>
       <div class="hero-right">
         <figure class="portrait-wrap">
-          <img src="/assets/pert-portrait.jpg" alt="Pert Lomp — strategic mentor and systems architect, Tallinn, Estonia" width="800" height="1000" loading="eager" fetchpriority="high" decoding="async" />
+          <picture>
+            <source type="image/avif" srcset="/assets/pert-portrait-480.avif 480w, /assets/pert-portrait-800.avif 800w, /assets/pert-portrait-1200.avif 1200w" sizes="(max-width: 640px) 85vw, (max-width: 1024px) 45vw, 413px" />
+            <source type="image/webp" srcset="/assets/pert-portrait-480.webp 480w, /assets/pert-portrait-800.webp 800w, /assets/pert-portrait-1200.webp 1200w" sizes="(max-width: 640px) 85vw, (max-width: 1024px) 45vw, 413px" />
+            <img src="/assets/pert-portrait-800.jpg" alt="Pert Lomp — strategic advisor and executive mentor, Tallinn, Estonia" width="800" height="1200" loading="eager" fetchpriority="high" decoding="async" />
+          </picture>
           <div class="portrait-badge" data-i18n="portrait-badge">Strategic Advisor</div>
           <figcaption class="portrait-tag">
             <div>
